@@ -2,16 +2,17 @@
 <img src="assets/mammoth.png" class="landing-logo" alt="mammoth logo" />
 <h1>Manage BIG problems in small bites.</h1>
 
-{{#link-to 'sessions.show'}}
+{{#link-to 'sessions.create'}}
 
   <form class="landin-sign-in" action="landing-sign-in" method="post">
-    <input type="email" name="name" value="User Name">
-    <input type="text" name="name" value="Password">
+
+    <label>User Name<input type="email" name="name" value="Email"></label>
+    <label>Password<input type="text" name="name" value="Password"></label>
   </form>
 
 {{/link-to}}
 
-{{#link-to 'sessions.create'}}
+{{#link-to 'users.create'}}
 
   <button type="button" name="button">Not a member? Sign Up Now</button>
 
