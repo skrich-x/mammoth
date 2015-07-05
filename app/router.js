@@ -11,6 +11,7 @@ Router.map(function() {
   this.route('sessions', function() {
     this.route('create');
     this.route('show');
+    this.route('destroy');
   });
 
   this.route('users', function() {
