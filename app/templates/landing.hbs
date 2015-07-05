@@ -1,1 +1,21 @@
+
+<img src="assets/mammoth.png" class="landing-logo" alt="mammoth logo" />
+<h1>Manage BIG problems in small bites.</h1>
+
+{{#link-to 'sessions.show'}}
+
+  <form class="landin-sign-in" action="landing-sign-in" method="post">
+    <input type="email" name="name" value="User Name">
+    <input type="text" name="name" value="Password">
+  </form>
+
+{{/link-to}}
+
+{{#link-to 'sessions.create'}}
+
+  <button type="button" name="button">Not a member? Sign Up Now</button>
+
+{{/link-to}}
+
+
 {{outlet}}
