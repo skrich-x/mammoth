@@ -1,21 +1,22 @@
+<div class="landing-container">
 
-<img src="assets/mammoth.png" class="landing-logo" alt="mammoth logo" />
-<h1>Manage BIG problems in small bites.</h1>
+  <img src="assets/mammoth.png" class="landing-logo" alt="mammoth logo" />
+  <h1 class="landing-header">Manage BIG problems in small bites.</h1>
 
-{{#link-to 'sessions.create'}}
+  {{#link-to 'sessions.create'}}
 
-  <form class="landin-sign-in" action="landing-sign-in" method="post">
+    <form class="landin-sign-in" {{action 'authenticate' on= 'submit'}}>
+      {{paper-text label="E-mail" type="email" value=model.username}}
+      {{paper-text label="Password" type="password" value=model.password}}
+      {{#paper-button classNames="md-primary" raised=true action="raisedButton"}}Log In{{/paper-button}}
 
-    <label>User Name<input type="email" name="name" value="Email"></label>
-    <label>Password<input type="text" name="name" value="Password"></label>
-  </form>
+    </form>
 
-{{/link-to}}
+  {{/link-to}}
 
-{{#link-to 'users.create'}}
-{{#paper-button raised=true action="raisedButton"}}Not a member? Sign Up Now{{/paper-button}}
+  {{#link-to 'users.create'}}
+  {{#paper-button raised=true action="raisedButton"}}Not a member? Sign Up Now{{/paper-button}}
 
-{{/link-to}}
-
-
+  {{/link-to}}
+</div>
 {{outlet}}

@@ -1,11 +1,41 @@
 @import 'ember-paper';
+@import 'bower_components/bourbon/app/assets/stylesheets/bourbon';
+@import 'bower_components/neat/app/assets/stylesheets/neat';
 
-body{
-  background-color: RGBA(215, 210, 204, 1);
+////////// Colors
+$main-teal: rgb(52, 152, 219);
+$main-gray: RGBA(223, 223, 223, 1);
+$light-tan: rgb(255, 255, 212);
+$dark-gray: rgb(181, 181, 191);
+$medium-gray: rgb(232, 232, 232);
+$light-gray: rgb(247, 247, 247);
+$very-light-gray: rgb(252, 252, 252);
+
+$base-font-color: $dark-gray;
+$base-background-color: $very-light-gray;
+
+$mobile: 720px;
+
+*{
+  box-sizing: border-box;
+  outline: none;
+}
+
+@mixin vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.landing-container{
+  @include outer-container(1080px);
 }
 
 .landing-logo{
-  height: 200px;
+  @include span-columns(6);
+  @include shift (3);
 }
 
 .sessions-logo{
