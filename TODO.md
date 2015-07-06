@@ -1,10 +1,10 @@
 # Final Project
-- name Mammoth- Task Management 
+- name Mammoth- Task Management
 
 
 ## Prep Work
 - [ ] Work on wire frames.
-- [ ]Write out user stories.
+- [ ] Write out user stories.
 - [ ] Domain Models.
 - [ ] User flow
 - [ ] Diagram
