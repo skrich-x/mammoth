@@ -15,8 +15,6 @@ $very-light-gray: rgb(252, 252, 252);
 $base-font-color: $dark-gray;
 $base-background-color: $very-light-gray;
 
-// $primary: "teal";
-
 ///////Media Query////////
 $mobile: 720px;
 
@@ -49,6 +47,7 @@ $mobile: 720px;
 .landing-modal{
   @include span-columns(6);
   @include shift(3);
+  margin-top:10%;
   background-color: $base-background-color;
   border: 1px solid $medium-gray;
   border-radius: 4px;
