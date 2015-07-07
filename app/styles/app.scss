@@ -1,8 +1,9 @@
+$primary: "teal";
 @import 'ember-paper';
 @import 'bower_components/bourbon/app/assets/stylesheets/bourbon';
 @import 'bower_components/neat/app/assets/stylesheets/neat';
 
-////////// Colors
+////////// Colors/////////////
 $main-teal: rgb(52, 152, 219);
 $main-gray: RGBA(223, 223, 223, 1);
 $light-tan: rgb(255, 255, 212);
@@ -14,12 +15,17 @@ $very-light-gray: rgb(252, 252, 252);
 $base-font-color: $dark-gray;
 $base-background-color: $very-light-gray;
 
+// $primary: "teal";
+
+///////Media Query////////
 $mobile: 720px;
 
+//////Global Styling////////
 *{
   box-sizing: border-box;
   outline: none;
 }
+
 
 @mixin vertical-align {
   position: relative;
@@ -29,8 +35,10 @@ $mobile: 720px;
   transform: translateY(-50%);
 }
 
+//////////Landing////////////
 .landing-container{
   @include outer-container(1080px);
+  text-align: center;
 }
 
 .landing-logo{
@@ -38,6 +46,18 @@ $mobile: 720px;
   @include shift (3);
 }
 
+.landing-modal{
+  @include span-columns(6);
+  @include shift(3);
+  background-color: $base-background-color;
+  border: 1px solid $medium-gray;
+  border-radius: 4px;
+  box-shadow: 0 0 5px rgba(0,0,0,.3);
+  padding: 2%;
+  position: relative;
+}
+
+/////////Sessions///////////
 .sessions-logo{
   width: 60%;
 }

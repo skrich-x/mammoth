@@ -23,7 +23,7 @@ module.exports = function(environment) {
       'script-src': "'self'",
       'font-src': "'self' fonts.gstatic.com",
       'connect-src': "'self'",
-      'img-src': "'self'",
+      'img-src': "'self' data:",
       'media-src': "'self'"
     }
   };
