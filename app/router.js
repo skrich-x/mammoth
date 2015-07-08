@@ -16,8 +16,9 @@ Router.map(function() {
 
   this.route('users', function() {
     this.route('create');
-    this.route('show');
+    this.route('show', {path :'parse-user_id'});
   });
+    this.route('users.current', {path: 'me'});
 });
 
 export default Router;
