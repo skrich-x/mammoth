@@ -1,7 +1,6 @@
-<form class="sign-up" action="create-user-session" method="post">
-  {{paper-text label="First Name" value=firstname}}
-  {{paper-text label="Last Name" value=lastname}}
-  {{paper-text label="E-mail" type='email' value=email}}
-  {{paper-text label="Password" type="password"}}
+<form class="sign-up" {{action "createUser" on="submit"}}>
+  {{paper-text label="Name" value=name}}
+  {{paper-text label="E-mail" type='email' value=model.username}}
+  {{paper-text label="Password" type="password" value=model.password}}
   {{#paper-button raised=true classNames="md-primary"}}Sign Up{{/paper-button}}
 </form>
