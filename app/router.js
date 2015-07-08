@@ -10,15 +10,17 @@ Router.map(function() {
 
   this.route('sessions', function() {
     this.route('create');
-    this.route('show');
     this.route('destroy');
   });
 
+  // this.route('users.current', {path: 'me'});
   this.route('users', function() {
     this.route('create');
-    this.route('show', {path :'parse-user_id'});
+    this.route('show', {path :':parse-user_id'});
+    this.route('current');
   });
-    this.route('users.current', {path: 'me'});
+
+  this.route('user', function() {});
 });
 
 export default Router;
