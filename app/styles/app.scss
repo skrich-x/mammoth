@@ -56,7 +56,21 @@ $mobile: 720px;
   position: relative;
 }
 
-/////////Sessions///////////
-.sessions-logo{
-  width: 60%;
+/////////Users-Current Session///////////
+.create-manage-logo{
+  @include span-columns(8);
+  @include shift(2);
+}
+
+.users-current{
+  @include outer-container(1080px);
+  text-align: center;
+}
+
+.create-description{
+  @include span-columns(4);
+}
+
+.manage-description{
+  @include span-columns(4);
 }
