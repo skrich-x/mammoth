@@ -19,8 +19,6 @@ Router.map(function() {
     this.route('show', {path :':parse-user_id'});
     this.route('current');
   });
-
-  this.route('user', function() {});
 });
 
 export default Router;
