@@ -1,7 +1,7 @@
 <form class="landing-sign-in" {{action 'authenticate' on= 'submit'}}>
   {{paper-text label="E-mail" type="email" value=identification}}
   {{paper-text label="Password" type="password" value=password}}
-  {{#link-to 'users.current'}}
+
     {{#paper-button classNames="md-primary" raised=true}}Log In{{/paper-button}}
-  {{/link-to}}
+
 </form>
