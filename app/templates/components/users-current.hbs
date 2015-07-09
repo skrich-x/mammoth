@@ -1,12 +1,15 @@
 <h4>Hello{{model.name}}</h4>
-{{#link-to 'sessions.destroy'}}
+{{!-- {{#link-to 'sessions.destroy'}}
   <button type="button" name="button">Log Out</button>
-{{/link-to}}
+{{/link-to}} --}}
+<div class="users-current">
 
 <img src="assets/mammoth.png" class="sessions-logo" alt="mammoth logo" />
 
 <p>Create a custom Project, Goal, or Event.</p>
 <p> Mammoth will help you achieve it.</p>
-<button type="button" name="button">Create</button>
+{{!-- <button type="button" name="button">Create</button> --}}
+{{#paper-button raised=true action= "createTask" on="submit"}}Create{{/paper-button}}
 <p>Manage your Progress Here</p>
-<button type="button" name="button">Manage</button>
+{{#paper-button raised=true action= "Manage" on="submit"}}Manage{{/paper-button}}
+</div>

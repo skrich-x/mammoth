@@ -19,6 +19,10 @@ Router.map(function() {
     this.route('show', {path :':parse-user_id'});
     this.route('current');
   });
+
+  this.route('tasks', function() {
+    this.route('create');
+  });
 });
 
 export default Router;
