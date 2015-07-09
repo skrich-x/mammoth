@@ -74,3 +74,14 @@ $mobile: 720px;
 .manage-description{
   @include span-columns(4);
 }
+
+///////////Task Create//////////////
+
+.task-create{
+  @include outer-container(1080px);
+}
+
+.task-form input{
+  @include span-columns(8);
+  padding: 2em;
+}
