@@ -1,22 +1,23 @@
-
 <h4>Hello{{model.name}}</h4>
-{{#paper-button raised=true}}Log Out{{/paper-button}}
-{{!-- {{#link-to 'sessions.destroy'}}
-  <button type="button" name="button">Log Out</button>
-{{/link-to}} --}}
-<div class="users-current">
+{{#if session.isAuthenticated}}
+{{#paper-button raised=true action='invalidateSession'}}Log Out{{/paper-button}}
+{{/if}}
+
+
 
   <img src="assets/mammoth.png" class="create-manage-logo" alt="mammoth logo" />
+
+<div class="create-manage-description">
 
   <div class="create-description">
     <p>Create a custom Project, Goal, or Event.</p>
     <p> Mammoth will help you achieve it.</p>
-    {{!-- <button type="button" name="button">Create</button> --}}
-    {{#paper-button classNames="md-primary" raised=true action= "createTask" on="submit"}}Create{{/paper-button}}
+    {{#paper-button classNames="md-primary" raised=true action="createTask" on="submit"}}Create{{/paper-button}}
   </div>
 
   <div class="manage-description">
     <p>Manage your Progress Here</p>
-    {{#paper-button classNames="md-primary" raised=true action= "Manage" on="submit"}}Manage{{/paper-button}}
+    {{#paper-button classNames="md-primary" raised=true action="Manage" on="submit"}}Manage{{/paper-button}}
   </div>
+
 </div>
