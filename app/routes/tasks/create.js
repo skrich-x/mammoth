@@ -2,12 +2,15 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
 
+  model: function(){
+    return this.store.createRecord('task');
+  },
+
   actions: {
-    createTask: function(){
-      // user.set('task', user.get('task'));
-      console.log('create Task button');
+    createTask: function(task){
+      console.log(task.get('name'));
     },
-    
+
     createSubtask: function(){
       console.log('create Subtask Button');
     },

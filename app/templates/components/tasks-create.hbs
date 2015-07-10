@@ -1,7 +1,7 @@
 <div class="task-create">
   <form class="task-form" {{action "createTask" on="submit"}}>
-      {{paper-text label="Task Name" value=name}}
-      {{paper-text label="Due date" type="date" value=date }}
+      {{paper-text label="Task Name" value=model.name}}
+      {{paper-text label="Due date" type="date" value=model.date }}
 
       {{#paper-button  raised=true classNames="md-primary"}}Add Task{{/paper-button}}
   </form>
