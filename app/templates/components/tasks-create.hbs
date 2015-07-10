@@ -2,10 +2,15 @@
   <form class="task-form" {{action "createTask" on="submit"}}>
       {{paper-text label="Task Name" value=name}}
       {{paper-text label="Due date" type="date" value=date }}
-      {{#paper-button action='createSubtask' raised=true classNames="md-primary"}}Add Subtask{{/paper-button}}
 
-      {{#paper-button action='createTask' raised=true classNames="md-primary"}}Add Task{{/paper-button}}
+      {{#paper-button  raised=true classNames="md-primary"}}Add Task{{/paper-button}}
   </form>
+
+  {{!-- <form class="task-form" {{action "createSubtask" on="submit"}}>
+
+    {{#paper-button raised=true classNames="md-primary"}}Add Subtask{{/paper-button}}
+
+  </form> --}}
 </div>
 
 {{yield}}

@@ -22,6 +22,7 @@ Router.map(function() {
 
   this.route('tasks', function() {
     this.route('create');
+    this.route('createSubtask');
   });
 });
 
