@@ -24,6 +24,9 @@ $mobile: 720px;
   outline: none;
 }
 
+h1,h2,h3,h4,h5{
+  margin: 0;
+}
 
 @mixin vertical-align {
   position: relative;
@@ -57,6 +60,12 @@ $mobile: 720px;
 }
 
 /////////Users-Current Session///////////
+
+.users-current-header{
+  background-color: #BDBDBD;
+  height: 100px;
+
+}
 .create-manage-logo{
   @include span-columns(8);
   @include shift(2);
@@ -73,6 +82,11 @@ $mobile: 720px;
 
 .manage-description{
   @include span-columns(4);
+}
+
+.landing-heading{
+  font-size: 4em;
+  text-decoration: underline;
 }
 
 ///////////Task Create//////////////
