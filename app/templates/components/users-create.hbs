@@ -1,7 +1,7 @@
 <form class="sign-up" {{action "createUser" on="submit"}}>
-  {{paper-text label="Name" value=model.name}}
-  {{paper-text label="E-mail" type='email' value=model.username}}
-  {{paper-text label="Password" type="password" value=model.password}}
+  {{input type="text" name="Name" placeholder="Name" value=model.name}}
+  {{input type="email" name="E-mail" placeholder="Email" value=model.username}}
+  {{input type="password" name="Password" placeholder="Password" value=model.password}}
+  <button type="submit" name="button" >Create User Accout </button>
 
-    {{#paper-button raised=true classNames="md-primary"}}Sign Up{{/paper-button}}
 </form>
