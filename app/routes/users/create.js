@@ -5,7 +5,7 @@ export default Ember.Route.extend({
   model: function(){
     return this.store.createRecord('parseUser');
   },
-  
+
   actions: {
   createUser: function(user){
       user.set('email', user.get('username'));

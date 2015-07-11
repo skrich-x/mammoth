@@ -1,5 +1,15 @@
-<form class="landing-sign-in" {{action 'authenticate' on= 'submit'}}>
-  {{input placeholder="E-mail" type="email" value=identification}}
-  {{input placeholder="Password"  type="password" value=password}}
-    <button type="submit" name="button">Log In</button>
-</form>
+<div class="signin-container">
+
+  <div class='signin-modal'>
+    <img src="assets/mammoth.png" class="signin-logo" alt="mammoth logo" />
+    <h5 class="sign-in-header">Sign In to your Mammoth Task Account</h5>
+
+
+    <form class="pure-form landing-sign-in" {{action 'authenticate' on= 'submit'}}>
+      <fieldset class="pure-group">
+      {{input placeholder="E-mail" type="email" value=identification}} {{input placeholder="Password" type="password" value=password}}
+      <button class="pure-button button-main" type="submit" name="button">Log In</button>
+    </fieldset>
+    </form>
+  </div>
+</div>

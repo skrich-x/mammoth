@@ -1,7 +1,7 @@
-<form class="sign-up" {{action "createUser" on="submit"}}>
+<form class="pure-form sign-up " {{action "createUser" on="submit"}}>
   {{input type="text" name="Name" placeholder="Name" value=model.name}}
   {{input type="email" name="E-mail" placeholder="Email" value=model.username}}
   {{input type="password" name="Password" placeholder="Password" value=model.password}}
-  <button type="submit" name="button" >Create User Accout </button>
+  <button class="pure-button button-main" type="submit" name="button" >Create User Accout </button>
 
 </form>

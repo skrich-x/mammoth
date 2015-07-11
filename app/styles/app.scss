@@ -1,5 +1,8 @@
+
 @import 'bower_components/bourbon/app/assets/stylesheets/bourbon';
 @import 'bower_components/neat/app/assets/stylesheets/neat';
+
+$font-family: 'Raleway', sans-serif;
 
 ////////// Colors/////////////
 $main-teal: rgb(52, 152, 219);
@@ -23,8 +26,23 @@ $mobile: 720px;
 }
 
 h1,h2,h3,h4,h5{
+  font-family: 'Raleway';
   margin: 0;
 }
+html {
+  background: url('angledBackground.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
+.button-main {
+    background: RGBA(0, 150, 136, 1);
+    color: white;
+}
+
 
 @mixin vertical-align {
   position: relative;
@@ -49,16 +67,26 @@ h1,h2,h3,h4,h5{
   @include span-columns(6);
   @include shift(3);
   margin-top:10%;
-  background-color: $base-background-color;
+  background-color: RGBA(241, 240, 237, 1);
   border: 1px solid $medium-gray;
   border-radius: 4px;
-  box-shadow: 0 0 5px rgba(0,0,0,.3);
+  box-shadow:0 12px 15px 0 rgba(0, 0, 0, 0.24);
   padding: 2%;
   position: relative;
 }
 
-/////////Users-Current Session///////////
 
+.landing-heading{
+  color:RGBA(45, 62, 80, 1);
+  font-size: 4em;
+  text-decoration: underline;
+}
+
+.landing-tagline{
+  color:RGBA(45, 62, 80, 1);
+}
+
+/////////Users-Current Session///////////
 .users-current-header{
   background-color: #BDBDBD;
   height: 100px;
@@ -82,11 +110,6 @@ h1,h2,h3,h4,h5{
   @include span-columns(4);
 }
 
-.landing-heading{
-  font-size: 4em;
-  text-decoration: underline;
-}
-
 ///////////Task Create//////////////
 
 .task-create{
@@ -96,4 +119,27 @@ h1,h2,h3,h4,h5{
 .task-form input{
   @include span-columns(8);
   padding: 2em;
+}
+
+////////SIGNIN////////
+
+.signin-container{
+  @include outer-container(1080px);
+  text-align: center;
+}
+
+.signin-logo{
+  @include span-columns(6);
+  @include shift (3);
+}
+.signin-modal{
+  @include span-columns(6);
+  @include shift(3);
+  margin-top:10%;
+  background-color: $base-background-color;
+  border: 1px solid $medium-gray;
+  border-radius: 4px;
+  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24);
+  padding: 2%;
+  position: relative;
 }

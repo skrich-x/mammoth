@@ -7,29 +7,29 @@
 
   <img src="assets/mammoth.png" class="landing-logo" alt="mammoth logo" />
 
-  <h1 class="landing-header">Manage BIG problems in small bites.</h1>
+  <h1 class="landing-tagline">Manage BIG problems in small bites.</h1>
 
 
 {{#if session.isAuthenticated}}
   {{#link-to 'users.current'}}
 
-    <button type="button" name="button" >Go to my profile</button>
+    <button class="pure-button button-main" name="button" >Go to my profile</button>
 
   {{/link-to}}
 
-  <button type="button" name="button" {{action 'invalidateSession'}}> Log Out</button>
+  <button class="pure-button " name="button" {{action 'invalidateSession'}}> Log Out</button>
 
   {{else}}
 
   {{#link-to 'sessions.create'}}
 
-  <button type="button" name="button">Log In</button>
+  <button class="pure-button button-main" name="button">Log In</button>
 
   {{/link-to}}
 {{/if}}
 
   {{#link-to 'users.create'}}
-  <button type="button" name="button">Not a member? Sign Up Now</button>
+  <button class="pure-button button-main" name="button">Not a member? Sign Up Now</button>
   {{/link-to}}
 </div>
 </div>
