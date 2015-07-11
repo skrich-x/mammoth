@@ -11,8 +11,8 @@
 
   <h1 class="landing-tagline">Manage BIG problems in small bites.</h1>
 
-<form class="pure-form sign-up " {{action "createUser" on="submit"}}>
-  <fieldset class="pure-group">
+<form class="pure-form sign-up" {{action "createUser" on="submit"}}>
+  <fieldset class="pure-group signin-fieldset">
   {{input type="text" name="Name" placeholder="Name" value=model.name}}
   {{input type="email" name="E-mail" placeholder="Email" value=model.username}}
   {{input type="password" name="Password" placeholder="Password" value=model.password}}

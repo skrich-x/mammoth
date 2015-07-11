@@ -7,32 +7,32 @@
 
     <hr>
 
-  <img src="assets/mammoth.png" class="landing-logo" alt="mammoth logo" />
+    <img src="assets/mammoth.png" class="landing-logo" alt="mammoth logo" />
 
-  <h1 class="landing-tagline">Manage BIG problems in small bites.</h1>
+    <h1 class="landing-tagline">Manage BIG problems in small bites.</h1>
 
 
-{{#if session.isAuthenticated}}
-  {{#link-to 'users.current'}}
+    {{#if session.isAuthenticated}}
+      {{#link-to 'users.current'}}
 
-    <button class="pure-button button-main" name="button" >Go to my profile</button>
+        <button class="pure-button button-main" name="button">Go to my profile</button>
 
-  {{/link-to}}
+      {{/link-to}}
 
-  <button class="pure-button " name="button" {{action 'invalidateSession'}}> Log Out</button>
+      <button class="pure-button " name="button" {{action 'invalidateSession'}}> Log Out</button>
 
-  {{else}}
+    {{else}}
 
-  {{#link-to 'sessions.create'}}
+      {{#link-to 'sessions.create'}}
 
-  <button class="pure-button button-main" name="button">Log In</button>
+        <button class="pure-button button-main" name="button">Log In</button>
 
-  {{/link-to}}
-{{/if}}
+      {{/link-to}}
+    {{/if}}
 
-  {{#link-to 'users.create'}}
-  <button class="pure-button button-main non-member" name="button">Not a member? Sign Up Now</button>
-  {{/link-to}}
-</div>
+    {{#link-to 'users.create'}}
+      <button class="pure-button non-member" name="button">Not a member? Sign Up Now</button>
+    {{/link-to}}
+  </div>
 </div>
 {{outlet}}
