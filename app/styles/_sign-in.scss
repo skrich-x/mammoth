@@ -1,0 +1,22 @@
+////////SIGNIN////////
+
+.signin-container{
+  @include outer-container(1080px);
+  text-align: center;
+}
+
+.signin-logo{
+  @include span-columns(6);
+  @include shift (3);
+}
+.signin-modal{
+  @include span-columns(6);
+  @include shift(3);
+  margin-top:10%;
+  background-color: $base-background-color;
+  border: 1px solid $medium-gray;
+  border-radius: 4px;
+  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24);
+  padding: 2%;
+  position: relative;
+}

@@ -1,7 +1,24 @@
+<div class="landing-container">
+  <div class='landing-modal'>
+
+    <h1 class="landing-heading">
+      Mammoth Task
+    </h1>
+
+    <hr>
+
+  <img src="assets/mammoth.png" class="landing-logo" alt="mammoth logo" />
+
+  <h1 class="landing-tagline">Manage BIG problems in small bites.</h1>
+
 <form class="pure-form sign-up " {{action "createUser" on="submit"}}>
+  <fieldset class="pure-group">
   {{input type="text" name="Name" placeholder="Name" value=model.name}}
   {{input type="email" name="E-mail" placeholder="Email" value=model.username}}
   {{input type="password" name="Password" placeholder="Password" value=model.password}}
   <button class="pure-button button-main" type="submit" name="button" >Create User Accout </button>
+</fieldset>
 
 </form>
+</div>
+</div>

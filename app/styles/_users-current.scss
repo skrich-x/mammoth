@@ -1,0 +1,23 @@
+/////////Users-Current Session///////////
+.users-current-header{
+  background-color: #BDBDBD;
+  height: 100px;
+
+}
+.create-manage-logo{
+  @include span-columns(8);
+  @include shift(2);
+}
+
+.users-current{
+  @include outer-container(1080px);
+  text-align: center;
+}
+
+.create-description{
+  @include span-columns(4);
+}
+
+.manage-description{
+  @include span-columns(4);
+}

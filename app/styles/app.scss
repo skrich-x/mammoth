@@ -16,6 +16,13 @@ $very-light-gray: rgb(252, 252, 252);
 $base-font-color: $dark-gray;
 $base-background-color: $very-light-gray;
 
+//////////Partials//////////
+@import 'landing';
+@import 'users-current';
+@import 'sign-in';
+@import 'task-create';
+
+
 ///////Media Query////////
 $mobile: 720px;
 
@@ -24,18 +31,20 @@ $mobile: 720px;
   box-sizing: border-box;
   outline: none;
 }
+a{
+  text-decoration:none;
+}
 
 h1,h2,h3,h4,h5{
   font-family: 'Raleway';
   margin: 0;
 }
 html {
-  background: url('angledBackground.png') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-
+  background: url('agsquare.png') repeat;
+  -webkit-background-size: repeat;
+  -moz-background-size: repeat;
+  -o-background-size: repeat;
+  background-size: repeat;
 }
 
 .button-main {
@@ -50,96 +59,4 @@ html {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-}
-
-//////////Landing////////////
-.landing-container{
-  @include outer-container(1080px);
-  text-align: center;
-}
-
-.landing-logo{
-  @include span-columns(6);
-  @include shift (3);
-}
-
-.landing-modal{
-  @include span-columns(6);
-  @include shift(3);
-  margin-top:10%;
-  background-color: RGBA(241, 240, 237, 1);
-  border: 1px solid $medium-gray;
-  border-radius: 4px;
-  box-shadow:0 12px 15px 0 rgba(0, 0, 0, 0.24);
-  padding: 2%;
-  position: relative;
-}
-
-
-.landing-heading{
-  color:RGBA(45, 62, 80, 1);
-  font-size: 4em;
-  text-decoration: underline;
-}
-
-.landing-tagline{
-  color:RGBA(45, 62, 80, 1);
-}
-
-/////////Users-Current Session///////////
-.users-current-header{
-  background-color: #BDBDBD;
-  height: 100px;
-
-}
-.create-manage-logo{
-  @include span-columns(8);
-  @include shift(2);
-}
-
-.users-current{
-  @include outer-container(1080px);
-  text-align: center;
-}
-
-.create-description{
-  @include span-columns(4);
-}
-
-.manage-description{
-  @include span-columns(4);
-}
-
-///////////Task Create//////////////
-
-.task-create{
-  @include outer-container(1080px);
-}
-
-.task-form input{
-  @include span-columns(8);
-  padding: 2em;
-}
-
-////////SIGNIN////////
-
-.signin-container{
-  @include outer-container(1080px);
-  text-align: center;
-}
-
-.signin-logo{
-  @include span-columns(6);
-  @include shift (3);
-}
-.signin-modal{
-  @include span-columns(6);
-  @include shift(3);
-  margin-top:10%;
-  background-color: $base-background-color;
-  border: 1px solid $medium-gray;
-  border-radius: 4px;
-  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24);
-  padding: 2%;
-  position: relative;
 }
