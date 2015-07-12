@@ -3,19 +3,19 @@
 
 
 ## Prep Work
-- [ ] Work on wire frames.
-- [ ] Write out user stories.
-- [ ] Domain Models.
-- [ ] User flow
-- [ ] Diagram
+- [x] Work on wire frames.
+- [x] Write out user stories.
+- [x] Domain Models.
+- [x] User flow
+- [x] Diagram
 	-  Application States
 	-  Routes
 	-  Components
 	-  Templates
 
 ## Repo Set Up
-- [ ]**create repo**
-	-[ ] ember new repo
+- [x]**create repo**
+	-[x] ember new repo
 	- [ ]install ember cli
 	- [ ]ember install ember-cli-sass
 	- [ ]bower install --save neat

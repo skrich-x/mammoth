@@ -9,11 +9,12 @@
   padding: 0.5em;
   box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
 }
-img{
+.create-manage-logo{
+  @include bounce;
   padding-top: 5em;
 }
 
-.landing-heading{
+.current-user-heading{
   @include span-columns(6);
   @include omega();
   margin:0 auto;
