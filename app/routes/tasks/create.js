@@ -14,5 +14,13 @@ export default Ember.Route.extend({
     createSubtask: function(){
       console.log('create Subtask Button');
     },
-  }
+    //
+    // calendar: function() {
+    //     return {
+    //       events: Ember.A([
+    //         {ti tle: "Test", start: Date.now()},
+    //       ])
+    //     };
+    //   }
+    }
 });
