@@ -41,14 +41,17 @@ h1,h2,h3,h4,h5{
   font-family: 'Raleway';
   margin: 0;
 }
-html {
-  background: url('agsquare.png') repeat;
-  -webkit-background-size: repeat;
-  -moz-background-size: repeat;
-  -o-background-size: repeat;
-  background-size: repeat;
-}
+// html {
+//   background: url('agsquare.png') repeat;
+//   -webkit-background-size: repeat;
+//   -moz-background-size: repeat;
+//   -o-background-size: repeat;
+//   background-size: repeat;
+// }
 
+html{
+  background-color: RGBA(241, 240, 237, 1);
+}
 .button-main {
     background: RGBA(0, 150, 136, 1);
     color: white;

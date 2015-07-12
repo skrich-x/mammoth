@@ -1,23 +1,42 @@
 /////////Users-Current Session///////////
 .users-current-header{
-  background-color: #BDBDBD;
-  height: 100px;
+  background-color: RGBA(0, 150, 136, .25);
+  height: 70px;
 
+}
+
+.landing-heading{
+  margin:0 auto;
+
+  text-align: center;
+}
+.greeting{
+  padding: 1em;
 }
 .create-manage-logo{
   @include span-columns(8);
   @include shift(2);
 }
 
-.users-current{
+.users-current-container{
   @include outer-container(1080px);
   text-align: center;
 }
 
 .create-description{
-  @include span-columns(4);
+  @include span-columns(3);
+  @include shift(2);
+  color:RGBA(223, 134, 66, 1);
 }
 
 .manage-description{
-  @include span-columns(4);
+  @include span-columns(3);
+  @include shift(2);
+  color:RGBA(223, 134, 66, 1);
+
+}
+
+.log-out{
+  background-color: RGBA(241, 240, 237, 1);
+  float:right;
 }

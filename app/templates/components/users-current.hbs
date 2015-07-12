@@ -1,30 +1,33 @@
-<div class="users-current-container">
+<div class=current-user-background>
   <header class="users-current-header">
-    <h4>Hello {{model.name}}</h4>
+    <h4 class="greeting">Hello {{model.name}}</h4>
+    <h1 class="landing-heading">
+      Mammoth Task
+    </h1>
     {{#if session.isAuthenticated}}
-      <button type="button" name="button" {{action 'invalidateSession'}}>Log Out</button>
+      <button class="pure-button log-out" name="button" {{action 'invalidateSession'}}>Log Out</button>
     {{/if}}
 
   </header>
+  <div class="users-current-container">
+    <img src="assets/mammothLogoV2.png" class="create-manage-logo" alt="mammoth logo" />
 
-  <img src="assets/mammoth.png" class="create-manage-logo" alt="mammoth logo" />
+    <div class="create-manage-description">
 
-  <div class="create-manage-description">
+      <div class="create-description">
+        <h3>Create a custom Project.</h3>
+        {{#link-to 'tasks.create'}}
+          <button class="pure-button button-main" type="submit" name="button">Create</button>
 
-    <div class="create-description">
-      <p>Create a custom Project, Goal, or Event.</p>
-      <p> Mammoth will help you achieve it.</p>
-      {{#link-to 'tasks.create'}}
-        <button type="button" name="button">Create</button>
+        {{/link-to}}
+      </div>
 
-      {{/link-to}}
+      <div class="manage-description">
+        <h3>Manage your Progress Here</h3>
+        <button class="pure-button button-main" type="submit" name="button">Manage </button>
+
+      </div>
+
     </div>
-
-    <div class="manage-description">
-      <p>Manage your Progress Here</p>
-      <button type="button" name="button">Manage</button>
-
-    </div>
-
   </div>
 </div>
