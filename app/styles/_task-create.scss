@@ -1,10 +1,26 @@
 ///////////Task Create//////////////
 
-.task-create{
+.task-create-container{
   @include outer-container(1080px);
+  margin: 0 auto;
+
+}
+
+.task-form{
+  @include span-columns(8);
+  @include shift(3);
+  margin-top: 8em;
 }
 
 .task-form input{
   @include span-columns(8);
-  padding: 2em;
+}
+
+.subtask-form{
+  @include span-columns(8);
+  @include shift(3);
+}
+
+.subtask-form input{
+  @include span-columns(8);
 }

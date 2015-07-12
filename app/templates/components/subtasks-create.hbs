@@ -1,7 +1,19 @@
-<form class="task-form" {{action "createSubtask" on="submit"}}>
-  {{input type="text" placeholder=subtask}}
+<form class="pure-form pure-form-stacked subtask-form" {{action "createSubtask" on="submit"}}>
+  <fieldset>
+    <legend>Enter Sub Tasks and Priority Here</legend>
 
-  <button class="pure-button button-main" type="submit" name="button">Create Subtask</button>
+    {{input type="text" placeholder="Subtask"
+    value=model.name}}
+
+        <select id="Priority">
+            <option>High</option>
+            <option>Normal</option>
+            <option>Low</option>
+        </select>
+
+  </fieldset>
+
+    <button class="pure-button button-main" type="submit" name="button">Create Subtask</button>
 
 </form>
 

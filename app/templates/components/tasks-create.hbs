@@ -1,10 +1,31 @@
+<div class=current-user-background>
+  <div class="users-current-header">
+    <h4 class="greeting">Hello {{model.name}}</h4>
+    <h1 class="current-user-heading">
+      Mammoth Task
+    </h1>
+    <div class="log-out-header">
+    {{#if session.isAuthenticated}}
+      <button class="pure-button log-out" name="button" {{action 'invalidateSession'}}>Log Out</button>
+    {{/if}}
+  </div>
+
+  </div>
+</div>
+
+<div class="task-creat-container">
 <div class="task-create">
-  <form class="task-form" {{action "createTask" on="submit"}}>
-      {{input type='text' placeholder='name' value=model.name}}
+    <form class="pure-form pure-form-stacked task-form"{{action "createTask" on="submit"}}>
+        <fieldset>
+            <legend>Project</legend>
+      {{input type='text' placeholder='Project Name' value=model.name}}
       {{input placeholder="Due date" type="date" value=model.date }}
 
-      <button class="pure-button button-main" type="submit" name="button">Create Task</button>
+
+    </fieldset>
+          <button class="pure-button button-main" type="submit" name="button">Create Task</button>
   </form>
+</div>
 
   {{!-- <form class="task-form" {{action "createSubtask" on="submit"}}>
 
