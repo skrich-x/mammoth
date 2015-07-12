@@ -1,16 +1,27 @@
 /////////Users-Current Session///////////
 .users-current-header{
-  background-color: RGBA(0, 150, 136, .25);
-  height: 70px;
-
+  background-color: RGBA(45, 62, 80, .25);
+  height: 80px;
+  z-index: 1;
+  /* The following styles are required for the "scroll-over" effect */
+  width: 100%;
+  position: fixed;
+  padding: 0.5em;
+  box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
+}
+img{
+  padding-top: 5em;
 }
 
 .landing-heading{
+  @include span-columns(6);
+  @include omega();
   margin:0 auto;
-
   text-align: center;
 }
 .greeting{
+  @include span-columns(3);
+  @include omega();
   padding: 1em;
 }
 .create-manage-logo{
@@ -34,6 +45,10 @@
   @include shift(2);
   color:RGBA(223, 134, 66, 1);
 
+}
+
+.log-out-header{
+ @include span-columns(3) ;
 }
 
 .log-out{

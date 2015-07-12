@@ -1,14 +1,22 @@
+{{!-- <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+ --}}
+
+
+
+
 <div class=current-user-background>
-  <header class="users-current-header">
+  <div class="users-current-header">
     <h4 class="greeting">Hello {{model.name}}</h4>
     <h1 class="landing-heading">
       Mammoth Task
     </h1>
+    <div class="log-out-header">
     {{#if session.isAuthenticated}}
       <button class="pure-button log-out" name="button" {{action 'invalidateSession'}}>Log Out</button>
     {{/if}}
+  </div>
 
-  </header>
+  </div>
   <div class="users-current-container">
     <img src="assets/mammothLogoV2.png" class="create-manage-logo" alt="mammoth logo" />
 
