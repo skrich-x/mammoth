@@ -3,6 +3,7 @@
 .task-create-container{
   @include outer-container(1080px);
   background-color:$medium-gray;
+
 }
 
 .subtask-create-container{
@@ -12,7 +13,6 @@
 
 .task-form{
   @include span-columns(8);
-  @include shift(3);
   margin-top: 8em;
 }
 
@@ -27,4 +27,11 @@
 
 .subtask-form input{
   @include span-columns(8);
+}
+
+.custom-restricted-width{
+  @include span-columns(3);
+  background-color: RGBA(84, 115, 115, 1);
+  float:left;
+  margin-top: 8em;
 }
