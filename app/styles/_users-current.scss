@@ -1,14 +1,29 @@
 /////////Users-Current Session///////////
-.users-current-header{
-  background-color: RGBA(93, 129, 128, .75);
+.users-current-nav{
+  background-color: #FFF;
   height: 80px;
   z-index: 1;
   /* The following styles are required for the "scroll-over" effect */
   width: 100%;
   position: fixed;
   padding: 0.5em;
-  box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
+  border-top: 6px solid RGBA(110, 12, 14, 1);
+  box-shadow: 0 3px 9px 0 rgba(0, 0, 0, 0.60);
 }
+.circle-logo{
+  z-index: 10;
+  position: relative;
+  height: 150px;
+  width: 150px;
+  background-color: RGBA(110, 142, 144, 1);
+  border-radius: 50%;
+  border: 3px solid RGBA(110, 12, 14, 1);
+}
+.circle-logo img{
+  height: 75px;
+  width:auto;
+}
+
 .create-manage-logo{
   @include bounce;
   padding-top: 7em;
@@ -19,11 +34,21 @@
   @include omega();
   margin:0 auto;
   text-align: center;
+  color: RGBA(0, 150, 136, 1);
+  font-weight: 200;
+  font-size: 3em;
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+               0px 8px 10px rgba(0,0,0,0.1),
+               0px 10px 15px rgba(0,0,0,0.1);
+
+
+
 }
 .greeting{
   @include span-columns(3);
   @include omega();
   padding: 1em;
+  float: right;
 }
 .create-manage-logo{
   @include span-columns(8);

@@ -1,6 +1,6 @@
 
 <div class=current-user-background>
-  <div class="users-current-header">
+  <div class="users-current-nav">
     <h4 class="greeting">Hello {{model.name}}</h4>
     <h1 class="current-user-heading">
       Mammoth Task
@@ -10,6 +10,10 @@
       <button class="pure-button log-out" name="button" {{action 'invalidateSession'}}>Log Out</button>
     {{/if}}
   </div>
+  <div class="circle-logo">
+    <a href="about"><img src="assets/mammothLogoV2.png" class="circle-logo-img" alt="mammoth logo" /></a>
+  </div>
+
 
   </div>
   <div class="users-current-container">

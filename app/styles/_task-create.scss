@@ -13,7 +13,7 @@
 
 .task-form{
   @include span-columns(8);
-  margin-top: 8em;
+  margin-top: 15em;
 }
 
 .task-form input{
@@ -33,5 +33,5 @@
   @include span-columns(3);
   background-color: RGBA(84, 115, 115, 1);
   float:left;
-  margin-top: 8em;
+  margin-top: 15em;
 }
