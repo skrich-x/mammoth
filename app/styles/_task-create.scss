@@ -2,8 +2,12 @@
 
 .task-create-container{
   @include outer-container(1080px);
-  margin: 0 auto;
+  background-color:$medium-gray;
+}
 
+.subtask-create-container{
+  @include outer-container(1080px);
+  background-color:$medium-gray;
 }
 
 .task-form{

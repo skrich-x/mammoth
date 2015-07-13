@@ -1,6 +1,6 @@
 /////////Users-Current Session///////////
 .users-current-header{
-  background-color: RGBA(45, 62, 80, .25);
+  background-color: RGBA(93, 129, 128, .75);
   height: 80px;
   z-index: 1;
   /* The following styles are required for the "scroll-over" effect */
@@ -11,7 +11,7 @@
 }
 .create-manage-logo{
   @include bounce;
-  padding-top: 5em;
+  padding-top: 7em;
 }
 
 .current-user-heading{
@@ -33,18 +33,22 @@
 .users-current-container{
   @include outer-container(1080px);
   text-align: center;
+  background-color:$medium-gray;
+  box-shadow:0 20px 30px 0 rgba(0, 0, 0, 0.60);
 }
 
 .create-description{
   @include span-columns(3);
   @include shift(2);
-  color:RGBA(223, 134, 66, 1);
+  padding:2em;
+  color:#97292C;
 }
 
 .manage-description{
   @include span-columns(3);
   @include shift(2);
-  color:RGBA(223, 134, 66, 1);
+  padding:2em;
+  color:#97292C;
 
 }
 
@@ -55,4 +59,12 @@
 .log-out{
   background-color: RGBA(241, 240, 237, 1);
   float:right;
+}
+
+.create-description{
+  border-top: 1px solid $dark-gray;
+}
+
+.manage-description{
+  border-top: 1px solid $dark-gray;
 }

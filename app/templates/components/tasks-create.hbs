@@ -13,19 +13,20 @@
   </div>
 </div>
 
-<div class="task-creat-container">
-<div class="task-create">
-    <form class="pure-form pure-form-stacked task-form"{{action "createTask" on="submit"}}>
-        <fieldset>
-            <legend>Project</legend>
-      {{input type='text' placeholder='Project Name' value=model.name}}
-      {{input placeholder="Due date" type="date" value=model.date }}
+<div class="task-create-container">
+
+    <div class="task-create">
+        <form class="pure-form pure-form-stacked task-form"{{action "createTask" on="submit"}}>
+            <fieldset>
+                <legend>Project</legend>
+          {{input type='text' placeholder='Project Name' value=model.name}}
+          {{input placeholder="Due date" type="date" value=model.date }}
 
 
-    </fieldset>
-          <button class="pure-button button-main" type="submit" name="button">Create Task</button>
-  </form>
-</div>
+        </fieldset>
+              <button class="pure-button button-main" type="submit" name="button">Create Task</button>
+      </form>
+    </div>
 
   {{!-- <form class="task-form" {{action "createSubtask" on="submit"}}>
 
