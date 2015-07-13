@@ -1,4 +1,3 @@
-
 <div class=current-user-background>
   <div class="users-current-nav">
     <h4 class="greeting">Hello {{model.name}}</h4>
@@ -6,13 +5,15 @@
       Mammoth Task
     </h1>
     <div class="log-out-header">
-    {{#if session.isAuthenticated}}
-      <button class="pure-button log-out" name="button" {{action 'invalidateSession'}}>Log Out</button>
-    {{/if}}
-  </div>
-  <div class="circle-logo">
-    <a href="about"><img src="assets/mammothLogoV2.png" class="circle-logo-img" alt="mammoth logo" /></a>
-  </div>
+      {{#if session.isAuthenticated}}
+        <button class="pure-button log-out" name="button" {{action 'invalidateSession'}}>Log Out</button>
+      {{/if}}
+    </div>
+    <div class="circle-logo">
+      <a href="about">
+        <img src="assets/mammothLogoV2.png" class="circle-logo-img" alt="mammoth logo" />
+      </a>
+    </div>
 
 
   </div>
@@ -24,40 +25,40 @@
 <div class="task-create-container">
 
   <div class="pure-menu custom-restricted-width">
-      <ul class="pure-menu-list">
-          <li class="pure-menu-item pure-menu-selected"><a href="tasks.create" class="pure-menu-link">Create New Project</a></li>
-          <li class="pure-menu-item"><a href="tasks.manage" class="pure-menu-link">Manage</a></li>
-          <li class="pure-menu-item"><a href="tutorial" class="pure-menu-link">How To</a></li>
-          <li class="pure-menu-item"><a href="about" class="pure-menu-link">About</a></li>
-          <li class="pure-menu-item pure-menu-has-children">
-              <a href="contact" id="menuLink1" class="pure-menu-link">Contact</a>
-              <ul class="pure-menu-children">
-                  <li class="pure-menu-item"><a href="#" class="pure-menu-link">Email</a></li>
-                  <li class="pure-menu-item"><a href="#" class="pure-menu-link">Github</a></li>
+    <ul class="pure-menu-list">
+      <li class="pure-menu-item pure-menu-selected"><a href="tasks.create" class="pure-menu-link">Create New Project</a></li>
+      <li class="pure-menu-item"><a href="tasks.manage" class="pure-menu-link">Manage</a></li>
+      <li class="pure-menu-item"><a href="tutorial" class="pure-menu-link">How To</a></li>
+      <li class="pure-menu-item"><a href="about" class="pure-menu-link">About</a></li>
+      <li class="pure-menu-item pure-menu-has-children">
+        <a href="contact" id="menuLink1" class="pure-menu-link">Contact</a>
+        <ul class="pure-menu-children">
+          <li class="pure-menu-item"><a href="#" class="pure-menu-link">Email</a></li>
+          <li class="pure-menu-item"><a href="#" class="pure-menu-link">Github</a></li>
 
-              </ul>
-          </li>
-      </ul>
+        </ul>
+      </li>
+    </ul>
   </div>
 
-    <div class="task-create">
-        <form class="pure-form pure-form-stacked task-form"{{action "createTask" on="submit"}}>
-            <fieldset>
-                <legend>Project</legend>
-          {{input type='text' placeholder='Project Name' value=model.name}}
-          {{input placeholder="Due date" type="date" value=model.date }}
+  <div class="task-create">
+    <form class="pure-form pure-form-stacked task-form" {{action "createTask" on="submit"}}>
+      <fieldset>
+        <legend>Project</legend>
+        {{input type='text' placeholder='Project Name' value=model.taskname}} {{input placeholder="Due date" type="date" value=model.date }}
 
 
-        </fieldset>
-              <button class="pure-button button-main" type="submit" name="button">Create Task</button>
-      </form>
-    </div>
+      </fieldset>
+      <button class="pure-button button-main" type="submit" name="button">Create Task</button>
+    </form>
+  </div>
 
-  {{!-- <form class="task-form" {{action "createSubtask" on="submit"}}>
+  {{!-- <form class="task-form" {{action "createSubtask" on="submit"}}
+  >
 
-    {{#paper-button raised=true classNames="md-primary"}}Add Subtask{{/paper-button}}
+    {{#paper-button raised=true classNames="md-primary" }}Add Subtask{{/paper-button}}
 
-  </form> --}}
+    </form> --}}
 </div>
 
 {{!-- <div id="calendar"></div> --}}

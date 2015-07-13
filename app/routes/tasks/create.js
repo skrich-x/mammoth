@@ -8,11 +8,11 @@ export default Ember.Route.extend({
 
   actions: {
     createTask: function(task){
-      console.log(task.get('name'));
+      console.log(task.get('taskname'));
     },
 
-    createSubtask: function(){
-      console.log('create Subtask Button');
+    createSubtask: function(subtask){
+      console.log(subtask.get('subtaskname'));
     },
     //
     // calendar: function() {
