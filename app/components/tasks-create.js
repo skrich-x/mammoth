@@ -6,10 +6,12 @@ export default Ember.Component.extend({
     createTask: function() {
       this.sendAction('action', this.get('model'));
     },
-    //
-    // model: function(){
-    //   return this.get ('tasks.create');
-    // }
+
+    invalidateSession: function() {
+  this.get('session').invalidate();
+},
+
+
 
   }
 });

@@ -9,11 +9,16 @@ export default Ember.Route.extend({
   actions: {
     createTask: function(task){
       console.log(task.get('taskname'));
+      console.log(task.get('date'));
     },
 
     createSubtask: function(subtask){
       console.log(subtask.get('subtaskname'));
     },
+
+      invalidateSession: function() {
+    this.get('session').invalidate();
+    }
     //
     // calendar: function() {
     //     return {
