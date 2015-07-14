@@ -1,6 +1,6 @@
 import { moduleForComponent, test } from 'ember-qunit';
 
-moduleForComponent('x-calendar', 'Unit | Component | x calendar', {
+moduleForComponent('full-calendar', 'Unit | Component | full calendar', {
   // Specify the other units that are required for this test
   // needs: ['component:foo', 'helper:bar'],
   unit: true

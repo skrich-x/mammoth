@@ -16,16 +16,10 @@ export default Ember.Route.extend({
       console.log(subtask.get('subtaskname'));
     },
 
-      invalidateSession: function() {
-    this.get('session').invalidate();
-    }
-    //
-    // calendar: function() {
-    //     return {
-    //       events: Ember.A([
-    //         {ti tle: "Test", start: Date.now()},
-    //       ])
-    //     };
-    //   }
-    }
+    invalidateSession: function() {
+      this.get('session').invalidate();
+    },
+
+  }
+
 });
