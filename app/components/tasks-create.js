@@ -8,7 +8,7 @@ export default Ember.Component.extend({
     },
 
     invalidateSession: function() {
-  this.get('session').invalidate();
+      this.get('session').invalidate();
     }
   }
 });

@@ -1,22 +1,30 @@
 <div class='subtask-create-container'>
+
   <form class="pure-form pure-form-stacked subtask-form" {{action "createSubtask" on="submit"}}>
+
     <fieldset>
+
       <legend>Enter Sub Tasks and Priority Here</legend>
-
-      {{input type="text" placeholder="Subtask" value=model.subtaskname}}
-
-      <select id="Priority">
-        <option>High</option>
-        <option>Normal</option>
-        <option>Low</option>
-      </select>
-
+        <ul class="subtask-list">
+          {{!-- {{#each}} --}}
+          <li class="subtask-list-items">
+              {{input type="text" placeholder="Subtask" value=model.subtaskName}}
+              <select id="Priority">
+                <option>Low</option>
+                <option>Normal</option>
+                <option>High</option>
+              </select>
+          </li>
+          {{!-- {{/each}} --}}
+        </ul>
     </fieldset>
 
-    <button class="pure-button button-main" type="submit" name="button">Create Subtask</button>
+    <button class="pure-button button-main" type="submit" name="button">Add Subtask</button>
+{{!--
+    <button class="pure-button button-main" type="submit" name="button">Save</button> --}}
 
   </form>
-<div id="calendar"></div>
+
 </div>
 
 {{yield}}
