@@ -16,8 +16,9 @@ export default DS.Model.extend({
 
   // Read only
   subtasks: function() {
+    return this.get('subtaskArray', 'date');
 
     // return an array of subtasks with computed dates added to each one
     //return this.get('subtaskArray').map(...)
-  }.property('subtaskArray', 'date')
+  }.property('subtaskArray.[]', 'date')
 });
