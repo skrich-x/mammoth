@@ -6,20 +6,25 @@
 
       <legend>Enter Sub Tasks and Priority Here</legend>
         <ul class="subtask-list">
-          {{!-- {{#each}} --}}
+          {{#each model.subtasks as |subtask|}}
+          <li>
+            {{subtask.subtaskName}}
+          </li>
+          {{/each}}
           <li class="subtask-list-items">
-              {{input type="text" placeholder="Subtask" value=model.subtaskName}}
+              {{input type="text" placeholder="Subtask" value=subtaskName}}
               <select id="Priority">
                 <option>Low</option>
                 <option>Normal</option>
                 <option>High</option>
               </select>
           </li>
-          {{!-- {{/each}} --}}
         </ul>
     </fieldset>
 
-    <button class="pure-button button-main" type="submit" name="button">Add Subtask</button>
+    <button class="pure-buttton button-main add-button" type="submit"><i class="fa fa-plus"></i>
+    </button>
+
 {{!--
     <button class="pure-button button-main" type="submit" name="button">Save</button> --}}
 

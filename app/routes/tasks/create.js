@@ -7,19 +7,9 @@ export default Ember.Route.extend({
   },
 
   actions: {
-    createTask: function(task){
-      console.log(task.get('taskName'));
-      console.log(task.get('dueDate'));
-      console.log(task);
-    },
-
-    createSubtask: function(subtaskObject){
-      var subtask =subtaskObject.get('subtaskName');
-      // this.push(subtask.get('subtaskName'));
-      console.log(subtask);
-      var array = subtaskObject._attributes.subtaskArray;
-      array.push(subtask);
-      console.log(array);
+    createTask: function(){
+      var model = this.modelFor(this.routeName);
+      model.save();
     },
 
     invalidateSession: function() {

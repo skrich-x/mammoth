@@ -42,13 +42,17 @@ h1,h2,h3,h4,h5{
   margin: 0;
 }
 
+ul{
+  list-style-type: none;
+}
+
 html {
   background: url('square_bg.png') repeat;
   -webkit-background-size: repeat;
   -moz-background-size: repeat;
   -o-background-size: repeat;
   background-size: repeat;
-  background-color: #6E8E90;
+  background-color: black;
 
 }
 
