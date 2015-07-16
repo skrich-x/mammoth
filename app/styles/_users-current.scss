@@ -1,6 +1,6 @@
 /////////Users-Current Session///////////
-.users-current-nav{
-  background-color: #FFF;
+.users-current-nav {
+  background-color: #fff;
   height: 80px;
   z-index: 1;
   /* The following styles are required for the "scroll-over" effect */
@@ -10,7 +10,8 @@
   border-top: 6px solid RGBA(110, 12, 14, 1);
   box-shadow: 0 3px 9px 0 rgba(0, 0, 0, 0.60);
 }
-.circle-logo{
+
+.circle-logo {
   z-index: 10;
   position: relative;
   height: 150px;
@@ -19,78 +20,79 @@
   border-radius: 50%;
   border: 3px solid RGBA(110, 12, 14, 1);
 }
-.circle-logo img{
-  height: 75px;
-  width:auto;
 
+.circle-logo img {
+  height: 75px;
+  width: auto;
 }
 
-.create-manage-logo{
+.create-manage-logo {
   @include pulse;
   padding-top: 7em;
 }
 
-.current-user-heading{
+.current-user-heading {
   @include span-columns(6);
   @include omega();
-  margin:0 auto;
-  text-align: center;
+  margin: 0 auto;
+  // text-align: center;
   color: RGBA(0, 150, 136, 1);
   font-weight: 200;
   font-size: 2em;
-  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
-               0px 8px 10px rgba(0,0,0,0.1),
-               0px 10px 15px rgba(0,0,0,0.1);
-
-
-
+  text-shadow: 0 4px 3px rgba(0,0,0,0.4), 0 8px 10px rgba(0,0,0,0.1), 0 10px 15px rgba(0,0,0,0.1);
 }
-.greeting{
+
+.greeting {
   @include span-columns(3);
   @include omega();
   padding: 1em;
   float: right;
 }
-.create-manage-logo{
+
+.create-manage-logo {
   @include span-columns(8);
   @include shift(2);
 }
 
-.users-current-container{
+.users-current-container {
   @include outer-container(1080px);
   text-align: center;
-  background-color:$medium-gray;
-  box-shadow:0 20px 30px 0 rgba(0, 0, 0, 0.60);
+  background-color: $medium-gray;
+  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.60);
 }
 
-.create-description{
+.create-description {
   @include span-columns(3);
   @include shift(2);
-  padding:2em;
-  color:#97292C;
+  padding: 2em;
+  color: #97292c;
 }
 
-.manage-description{
+.manage-description {
   @include span-columns(3);
   @include shift(2);
-  padding:2em;
-  color:#97292C;
-
+  padding: 2em;
+  color: #97292c;
 }
 
-.log-out-header{
- @include span-columns(3) ;
+.pure-menu-horizontal {
+  @include span-columns(4);
 }
 
-.log-out{
+.log-out-header {
+  @include span-columns(3);
+    float: right;
+}
+
+.log-out {
   background-color: RGBA(241, 240, 237, 1);
-  float:right;
+
 }
 
-.create-description{
+.create-description {
   border-top: 1px solid $dark-gray;
 }
 
-.manage-description{
+.manage-description {
   border-top: 1px solid $dark-gray;
 }

@@ -3,13 +3,14 @@
   <form class="pure-form pure-form-stacked subtask-form" {{action "createSubtask" on="submit"}}>
 
     <fieldset>
-
       <legend>Enter Sub Tasks and Priority Here</legend>
         <ul class="subtask-list">
           {{#each model.subtasks as |subtask|}}
           <li>
             {{subtask.subtaskName}}
+            <form>
             <button type="pure-button remove-button" {{action "removeSubtask" on="click"}}><i class="fa fa-minus"></i></button>
+          </form>
           </li>
           {{/each}}
           <li class="subtask-list-items">
@@ -19,13 +20,16 @@
                 <option>Normal</option>
                 <option>High</option>
               </select>
+              <button class="pure-buttton button-main add-button" type="submit"><i class="fa fa-plus"></i>
+              </button>
 
           </li>
+
         </ul>
+
     </fieldset>
 
-    <button class="pure-buttton button-main add-button" type="submit"><i class="fa fa-plus"></i>
-    </button>
+
 
 {{!--
     <button class="pure-button button-main" type="submit" name="button">Save</button> --}}

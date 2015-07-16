@@ -3,22 +3,18 @@
     <img src="assets/mammothLogoV4.png" class="landing-logo" alt="mammoth logo" />
 
     <h1 class="landing-heading">
-      Mammoth Task
+      MAMMOTH<span> task</span>
     </h1>
 
     <hr>
+    <h3 class="landing-tagline">Manage BIG problems in small bites.</h3>
 
+    <form class="pure-form sign-up" {{action "createUser" on="submit"}}>
+      <fieldset class="pure-group signin-fieldset">
+        {{input type="text" name="Name" placeholder="Name" value=model.name}} {{input type="email" name="E-mail" placeholder="Email"  value=model.username}} {{input type="password" name="Password" placeholder="Password" value=model.password}}
+        <button class="pure-button button-main" type="submit" name="button">Create User Account </button>
+      </fieldset>
 
-  <h3 class="landing-tagline">Manage BIG problems in small bites.</h3>
-
-<form class="pure-form sign-up" {{action "createUser" on="submit"}}>
-  <fieldset class="pure-group signin-fieldset">
-  {{input type="text" name="Name" placeholder="Name" value=model.name}}
-  {{input type="email" name="E-mail" placeholder="Email" value=model.username}}
-  {{input type="password" name="Password" placeholder="Password" value=model.password}}
-  <button class="pure-button button-main" type="submit" name="button" >Create User Account </button>
-</fieldset>
-
-</form>
-</div>
+    </form>
+  </div>
 </div>

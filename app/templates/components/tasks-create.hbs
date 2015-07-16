@@ -1,4 +1,3 @@
-
 <div class=current-user-background>
   <div class="users-current-nav">
     <h1 class="current-user-heading">
@@ -7,27 +6,27 @@
 
     <h4 class="greeting">Hello {{model.name}}</h4>
 
-  <div class="pure-menu pure-menu-horizontal">
-    <ul class="pure-menu-list">
+    <div class="pure-menu pure-menu-horizontal">
+      <ul class="pure-menu-list">
         <li class="pure-menu-item pure-menu-selected"><a href="#" class="pure-menu-link">Manage</a></li>
         <li class="pure-menu-item pure-menu-selected"><a href="#" class="pure-menu-link">How to Use</a></li>
         <li class="pure-menu-item pure-menu-selected"><a href="#" class="pure-menu-link">About</a></li>
         <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
-            <a href="#" id="menuLink1" class="pure-menu-link">Contact</a>
-            <ul class="pure-menu-children">
-                <li class="pure-menu-item"><a href="#" class="pure-menu-link">Email</a></li>
-                <li class="pure-menu-item"><a href="#" class="pure-menu-link">Twitter</a></li>
-                <li class="pure-menu-item"><a href="#" class="pure-menu-link">Github</a></li>
-            </ul>
+          <a href="#" id="menuLink1" class="pure-menu-link">Contact</a>
+          <ul class="pure-menu-children">
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Email</a></li>
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Twitter</a></li>
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Github</a></li>
+          </ul>
         </li>
-    </ul>
-</div>
+      </ul>
+    </div>
 
-<div class="log-out-header">
-{{#if session.isAuthenticated}}
-  <button class="pure-button log-out" name="button" {{action 'invalidateSession'}}>Log Out</button>
-{{/if}}
-</div>
+    <div class="log-out-header">
+      {{#if session.isAuthenticated}}
+        <button class="pure-button log-out" name="button" {{action 'invalidateSession'}}>Log Out</button>
+      {{/if}}
+    </div>
   </div>
 </div>
 
@@ -40,7 +39,7 @@
         {{input type='text' placeholder='Project Name' value=model.taskName}} {{input placeholder="Due date" type="date" value=model.dueDate }}
 
       </fieldset>
-      {{!-- <button class="pure-button button-main" type="submit" name="button">Create Project</button> --}}
+      <button class="pure-button button-main" type="submit" name="button">Save Project</button>
     </form>
   </div>
   {{!-- <div id="calendar"></div> --}}
