@@ -9,6 +9,7 @@
           {{#each model.subtasks as |subtask|}}
           <li>
             {{subtask.subtaskName}}
+            <button type="pure-button remove-button" {{action "removeSubtask" on="click"}}><i class="fa fa-minus"></i></button>
           </li>
           {{/each}}
           <li class="subtask-list-items">
@@ -18,6 +19,7 @@
                 <option>Normal</option>
                 <option>High</option>
               </select>
+
           </li>
         </ul>
     </fieldset>

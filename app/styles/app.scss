@@ -52,8 +52,16 @@ html {
   -moz-background-size: repeat;
   -o-background-size: repeat;
   background-size: repeat;
-  background-color: teal;
+  background-color:RGBA(52, 52, 52, 1);
 
+}
+
+hr{
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border: 0;
+    border-bottom: 1px dashed #ccc;
+    background: #999;
 }
 
 // html{

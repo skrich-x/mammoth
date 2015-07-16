@@ -1,17 +1,14 @@
 <div class="landing-container">
   <div class='landing-modal'>
-
+    <img src="assets/mammothLogoV4.png" class="landing-logo" alt="mammoth logo" />
     <h1 class="landing-heading">
       Mammoth Task
     </h1>
 
     <hr>
+    <h3 class="landing-tagline">Manage BIG problems in small bites.</h3>
 
-    <img src="assets/mammothLogoV4.png" class="landing-logo" alt="mammoth logo" />
-
-    <h1 class="landing-tagline">Manage BIG problems in small bites.</h1>
-
-
+    <div class="landing-option-buttons">
     {{#if session.isAuthenticated}}
       {{#link-to 'users.current'}}
 
@@ -34,5 +31,7 @@
       <button class="pure-button non-member" name="button">Not a member? Sign Up Now</button>
     {{/link-to}}
   </div>
+  </div>
 </div>
+
 {{outlet}}

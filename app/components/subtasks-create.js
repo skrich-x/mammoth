@@ -14,6 +14,10 @@ export default Ember.Component.extend({
         subtaskName: '',
         priority: 0
       });
-    }
+    },
+
+    // removeSubtask: function(){
+    //   this.removeObject(subtaskObject);
+    // }
   }
 });

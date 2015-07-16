@@ -5,6 +5,10 @@
   display: block;
 }
 .non-member{
+  @include pulse(
+  $duration: 5s,
+    $delay: .2s,
+    $function: ease);
   margin: 1em auto;
   background-color: RGBA(215, 210, 204, .5);
   display:block;
@@ -21,17 +25,13 @@
 }
 
 .landing-modal{
-  @include span-columns(6);
-  @include shift(3);
   @include fadeInDownBig;
-  margin-top:10%;
   background-color:$medium-gray;
   // background-color:black;
   border: 1px solid $medium-gray;
   border-radius: 4px;
   box-shadow:0 20px 30px 0 rgba(0, 0, 0, 0.5);
-  padding: 2%;
-  position: relative;
+
 }
 
 
@@ -50,3 +50,7 @@
   color:#97292C;
   font-weight: 200;
 }
+//
+// .landing-option-buttons{
+//   @include span-columns(3);
+// }
