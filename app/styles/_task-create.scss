@@ -45,9 +45,7 @@
 }
 
 .full-calendar{
-  @include span-columns(5.5);
-  // background-image: url("../mammothLogoV4.png");
-  background-color:RGBA(52, 52, 52, .1);
+  @include span-columns(5.5);  background-color:RGBA(52, 52, 52, .1);
   color: #97292c;
   margin-top: 3em;
   border-radius: 10px;

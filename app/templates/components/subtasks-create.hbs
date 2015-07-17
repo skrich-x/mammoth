@@ -8,6 +8,7 @@
           {{#each model.subtasks as |subtask|}}
             <li>
               {{subtask.subtaskName}}
+              {{subtask.subtaskDueDate}}
               <form>
               <button type="pure-button remove-button" {{action "removeSubtask" subtask}}><i class="fa fa-minus"></i></button>
             </form>

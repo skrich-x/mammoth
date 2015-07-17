@@ -12,7 +12,8 @@ export default Ember.Component.extend({
       task.get('subtaskArray').pushObject(subtaskObject);
       this.setProperties({
         subtaskName: '',
-        priority: 0
+        priority: 0,
+        subtaskDueDate: ''
       });
     },
 
