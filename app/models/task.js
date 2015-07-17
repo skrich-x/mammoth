@@ -5,6 +5,7 @@ export default DS.Model.extend({
   dueDate: DS.attr('date'),
   // owner: DS.belongsTo('parseUser'),
 
+
   defaults: function() {
     if (!this.get('subtaskArray')) {
       this.set('subtaskArray', []);

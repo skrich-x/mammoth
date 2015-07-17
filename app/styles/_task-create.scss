@@ -11,36 +11,50 @@
 }
 
 .task-form{
-  @include span-columns(10);
-  @include shift(2);
-  margin-top: 5em;
+  @include span-columns(6);
+  @include omega();
+  // @include shift(2);
+  margin-top: 3em;
+  padding:1em;
 }
 
 .task-form input{
-  @include span-columns(10);
+  @include span-columns(6);
 }
 // .save-project{
 //   @include span-columns(2);
 // }
+.task-instruction{
+  color:#97292C;
+}
 
 .subtask-form{
-  @include span-columns(10);
-  @include shift(2);
+  @include span-columns(8);
+  // @include shift(2);
+  padding-left:1em;
 }
 
 .subtask-form input{
-  @include span-columns(10);
-}
-
-.custom-restricted-width{
-  @include span-columns(2);
-  background-color: RGBA(84, 115, 115, 1);
-  float:left;
-  margin-top: 15em;
+  @include span-columns(8);
 }
 
 .add-button{
   height: 5em;
   width: 5em;
   border-radius: 50%;
+}
+
+.full-calendar{
+  @include span-columns(5.5);
+  // background-image: url("../mammothLogoV4.png");
+  background-color:RGBA(52, 52, 52, .1);
+  color: #97292c;
+  margin-top: 3em;
+  border-radius: 10px;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.fc-toolbar{
+  color:RGBA(0, 150, 136, 1);
 }

@@ -1,10 +1,10 @@
 <div class=current-user-background>
   <div class="users-current-nav">
     <h1 class="current-user-heading">
-      Mammoth Task
+      MAMMOTH<span> task</span>
     </h1>
 
-    <h4 class="greeting">Hello {{model.name}}</h4>
+    <h5 class="greeting">Hello {{model.name}}</h5>
 
     <div class="pure-menu pure-menu-horizontal">
       <ul class="pure-menu-list">
@@ -32,18 +32,32 @@
 
 <div class="task-create-container">
   <div class="task-create">
-    <form class="pure-form pure-form-stacked task-form" {{action "createTask" on="submit"}}>
+    <p class="task-instruction">
+      Create a large Project with a Due date. <br>
+      Add and remove subtask to that Project...<br>
+      MAMMOTH will break down the Project into small managable chunks.
+    </p>
+    <form class="pure-form pure-form-stacked task-form" {{action "createTask" "addEvent" on="submit"}}>
+      <p class="task-instruction">
+        Create a large Project with a Due date. <br>
+        Add and remove subtask to that Project...<br>
+        MAMMOTH will break down the Project into small managable chunks.
+      </p>
       <fieldset>
 
         <legend>Project</legend>
-        {{input type='text' placeholder='Project Name' value=model.taskName}} {{input placeholder="Due date" type="date" value=model.dueDate }}
+        {{input type='text' placeholder='Project Name' value=model.taskName}}
+        {{!-- {{input placeholder="Due date" type="date" value=model.dueDate }} --}}
+        {{date-picker dateValue=model.dueDate}}
 
       </fieldset>
       <button class="pure-button button-main save-project" type="submit" name="button">Save Project</button>
 
     </form>
   </div>
-  {{!-- <div id="calendar"></div> --}}
+
+  {{full-calendar events=events}}
+
 </div>
 
 {{yield}}

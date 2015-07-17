@@ -2,7 +2,7 @@
 .users-current-nav {
   background-color: #fff;
   height: 80px;
-  z-index: 1;
+  z-index: 10;
   /* The following styles are required for the "scroll-over" effect */
   width: 100%;
   position: fixed;
@@ -11,20 +11,20 @@
   box-shadow: 0 3px 9px 0 rgba(0, 0, 0, 0.60);
 }
 
-.circle-logo {
-  z-index: 10;
-  position: relative;
-  height: 150px;
-  width: 150px;
-  background-color: RGBA(171, 199, 200, 1);
-  border-radius: 50%;
-  border: 3px solid RGBA(110, 12, 14, 1);
-}
-
-.circle-logo img {
-  height: 75px;
-  width: auto;
-}
+// .circle-logo {
+//   z-index: 10;
+//   position: relative;
+//   height: 150px;
+//   width: 150px;
+//   background-color: RGBA(171, 199, 200, 1);
+//   border-radius: 50%;
+//   border: 3px solid RGBA(110, 12, 14, 1);
+// }
+//
+// .circle-logo img {
+//   height: 75px;
+//   width: auto;
+// }
 
 .create-manage-logo {
   @include pulse;
@@ -37,14 +37,16 @@
   margin: 0 auto;
   // text-align: center;
   color: RGBA(0, 150, 136, 1);
-  font-weight: 200;
+  font-weight: 900;
   font-size: 2em;
-  text-shadow: 0 4px 3px rgba(0,0,0,0.4), 0 8px 10px rgba(0,0,0,0.1), 0 10px 15px rgba(0,0,0,0.1);
+}
+.current-user-heading span{
+  font-weight: 200;
 }
 
-.greeting {
-  @include span-columns(3);
-  @include omega();
+.greeting h4{
+  // @include span-columns(3);
+  // @include omega();
   padding: 1em;
   float: right;
 }
@@ -66,7 +68,9 @@
   @include shift(2);
   padding: 2em;
   color: #97292c;
+
 }
+
 
 .manage-description {
   @include span-columns(3);
@@ -86,7 +90,6 @@
 
 .log-out {
   background-color: RGBA(241, 240, 237, 1);
-
 }
 
 .create-description {

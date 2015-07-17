@@ -10,6 +10,7 @@ export default Ember.Route.extend({
     createTask: function(){
       var model = this.modelFor(this.routeName);
       model.save();
+
     },
 
     invalidateSession: function() {

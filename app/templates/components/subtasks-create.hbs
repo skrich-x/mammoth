@@ -6,12 +6,12 @@
       <legend>Enter Sub Tasks and Priority Here</legend>
         <ul class="subtask-list">
           {{#each model.subtasks as |subtask|}}
-          <li>
-            {{subtask.subtaskName}}
-            <form>
-            <button type="pure-button remove-button" {{action "removeSubtask" subtask}}><i class="fa fa-minus"></i></button>
-          </form>
-          </li>
+            <li>
+              {{subtask.subtaskName}}
+              <form>
+              <button type="pure-button remove-button" {{action "removeSubtask" subtask}}><i class="fa fa-minus"></i></button>
+            </form>
+            </li>
           {{/each}}
           <li class="subtask-list-items">
               {{input type="text" placeholder="Subtask" value=subtaskName}}
@@ -29,11 +29,12 @@
 
     </fieldset>
 
+
 {{!--
     <button class="pure-button button-main" type="submit" name="button">Save</button> --}}
 
   </form>
-  {{full-calendar events=events}}
+
 
 </div>
 {{yield}}
