@@ -1,10 +1,10 @@
 import DS from 'ember-data';
+import Ember from 'ember';
 
 export default DS.Model.extend({
   taskName: DS.attr('string'),
   dueDate: DS.attr('date'),
   // owner: DS.belongsTo('parseUser'),
-
 
   defaults: function() {
     if (!this.get('subtaskArray')) {
@@ -12,24 +12,24 @@ export default DS.Model.extend({
     }
   }.on('ready'),
 
-  // Write only
   subtaskArray: DS.attr(),
+  subtasks: Ember.computed.alias('subtaskArray'),
 
-  // Read only
-  subtasks: function() {
+  updateSubtaskDates: function() {
     var today = moment(new Date());
     var dueDate = moment(new Date(this.get('dueDate')));
-    var diff = dueDate.diff(today, 'days'); //86
-    var tasks = this.get('subtaskArray');
-    var spread = diff/tasks.length;
+    var diff = dueDate.diff(today, 'days');
+    var subtasks = this.get('subtaskArray');
+    var spread = diff/subtasks.length;
 
-    tasks.forEach(function(task, index) {
+    subtasks.forEach(function(subtask, index) {
       var today = moment(new Date());
       var dueDate = today.add(spread*(index+1), 'days').toDate();
-        task.set('subtaskDueDate', dueDate);
+      console.log(subtask);
+        Ember.set(subtask, 'subtaskDueDate', dueDate);
     });
 
     return this.get('subtaskArray', 'dueDate');
 
-  }.property('subtaskArray.[]', 'dueDate')
+  }.observes('subtaskArray.[]', 'dueDate')
 });
