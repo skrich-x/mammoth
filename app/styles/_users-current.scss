@@ -27,12 +27,19 @@
 // }
 
 .create-manage-logo {
-  @include pulse;
+  @include span-columns(6);
+  @include shift(3);
+  @include fadeIn(
+    $duration: 2s,
+    $delay: .4s,
+    $function: ease
+  );
   padding-top: 7em;
+
 }
 
 .current-user-heading {
-  @include span-columns(4);
+  @include span-columns(3.5);
   @include omega();
   margin: 0 auto;
   // text-align: center;
@@ -40,6 +47,7 @@
   color: RGBA(0, 150, 136, 1);
   font-weight: 900;
   font-size: 2em;
+  padding-left: 2em;
 }
 .current-user-heading span{
   font-weight: 200;
@@ -52,10 +60,7 @@
 //   float: right;
 // }
 
-.create-manage-logo {
-  @include span-columns(8);
-  @include shift(2);
-}
+
 
 .users-current-container {
   @include outer-container(1080px);
