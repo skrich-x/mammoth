@@ -3,7 +3,7 @@
 module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'mammoth',
-    environment: environment,
+    environment: 'environment',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
@@ -60,6 +60,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
+    ENV.baseURL = '/mammoth/';
 
   }
 
