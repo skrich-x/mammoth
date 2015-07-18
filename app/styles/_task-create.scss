@@ -50,7 +50,7 @@
   font-size: 5em;
 }
 
-.full-calendar{
+#calendar{
   @include span-columns(5.5);  background-color:RGBA(52, 52, 52, .1);
   color: #97292c;
   margin-top: 3em;
