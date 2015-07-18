@@ -9,17 +9,5 @@ export default Ember.Component.extend({
     model: function(){
       return this.get ('session.currentUser');
     },
-//     fullCallendar: function(){
-//     $(document);ready(function() {
-//     $('#calendar');fullCalendar({
-//         googleCalendarApiKey: 'AIzaSyB6-NLaDa-cA5XhaKPDp2mHKUhnk7L0cBI',
-//         events: {
-//             googleCalendarId: 'tiymammoth@gmail.com'
-//         }
-//     });
-// });
-// }
-
-
   }
 });

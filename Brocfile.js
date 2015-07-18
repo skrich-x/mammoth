@@ -16,12 +16,10 @@ var app = new EmberApp();
 // modules that you would like to import into your application
 // please specify an object with the list of modules as keys
 // along with the exports of each module as its value.
-app.import('bower_components/moment/moment.js');
-app.import('bower_components/fullcalendar/dist/gcal.js');
-app.import('bower_components/fullcalendar/dist/fullcalendar.css');
-app.import('bower_components/fullcalendar/dist/');
-app.import('bower_components/jquery/dist/jquery.min.js');
-app.import('bower_components/moment/moment.js');
 
+app.import('bower_components/fullcalendar/dist/fullcalendar.css');
+
+app.import('bower_components/moment/moment.js');
 app.import('bower_components/fullcalendar/dist/fullcalendar.js');
+app.import('bower_components/fullcalendar/dist/gcal.js');
 module.exports = app.toTree();
