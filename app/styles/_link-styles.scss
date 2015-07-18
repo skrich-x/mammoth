@@ -1,3 +1,7 @@
+/*Styles from http://tympanus.net/codrops/author/crnacura/
+Modified
+*/
+
 *,
 *:after,
 *::before {
@@ -17,10 +21,9 @@ nav a {
 	outline: none;
 	color: #fff;
 	text-decoration: none;
-	text-transform: uppercase;
+	// text-transform: uppercase;
 	letter-spacing: 1px;
 	font-weight: 400;
-	text-shadow: 0 0 1px rgba(255,255,255,0.3);
 	font-size: 1.35em;
 }
 
@@ -756,8 +759,9 @@ nav a:focus {
 
 .cl-effect-18 a {
 	padding: 0 5px;
-	color: #b4770d;
-	font-weight: 700;
+	color: black;
+  font-family: Raleway;
+	font-weight: 200;
 	-webkit-transition: color 0.3s;
 	-moz-transition: color 0.3s;
 	transition: color 0.3s;
@@ -771,7 +775,7 @@ nav a:focus {
 	top: 50%;
 	height: 2px;
 	margin-top: -1px;
-	background: #b4770d;
+	background: black;
 	content: '';
 	z-index: -1;
 	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
@@ -794,7 +798,7 @@ nav a:focus {
 
 .cl-effect-18 a:hover,
 .cl-effect-18 a:focus {
-	color: #fff;
+	color: RGBA(110, 12, 14, 1);
 }
 
 .cl-effect-18 a:hover::before,

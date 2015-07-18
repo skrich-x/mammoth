@@ -32,10 +32,11 @@
 }
 
 .current-user-heading {
-  @include span-columns(6);
+  @include span-columns(4);
   @include omega();
   margin: 0 auto;
   // text-align: center;
+  vertical-align: baseline;
   color: RGBA(0, 150, 136, 1);
   font-weight: 900;
   font-size: 2em;
@@ -44,12 +45,12 @@
   font-weight: 200;
 }
 
-.greeting h4{
-  // @include span-columns(3);
-  // @include omega();
-  padding: 1em;
-  float: right;
-}
+// .greeting h4{
+//   // @include span-columns(3);
+//   // @include omega();
+//   padding: 1em;
+//   float: right;
+// }
 
 .create-manage-logo {
   @include span-columns(8);
@@ -85,12 +86,15 @@
 
 .log-out-header {
   @include span-columns(3);
-    float: right;
+  vertical-align: baseline;
+  float: right;
 }
 
-.log-out {
-  background-color: RGBA(241, 240, 237, 1);
+.log-out-anchor{
+  @include span-columns(.5);
+  color:black;
 }
+
 
 .create-description {
   border-top: 1px solid $dark-gray;

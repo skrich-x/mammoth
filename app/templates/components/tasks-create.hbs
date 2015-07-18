@@ -4,7 +4,6 @@
       MAMMOTH<span> task</span>
     </h1>
 
-    <h5 class="greeting">Hello {{model.name}}</h5>
 
     <div class="pure-menu pure-menu-horizontal">
       <ul class="pure-menu-list">
@@ -23,8 +22,12 @@
     </div>
 
     <div class="log-out-header">
+          <h5 class="greeting">Hello {{session.name}}</h5>
       {{#if session.isAuthenticated}}
-        <button class="pure-button log-out" name="button" {{action 'invalidateSession'}}>Log Out</button>
+      {{!-- <nav class="cl-effect-18"> --}}
+        <a href='#' class='log-out-anchor'
+       {{action 'invalidateSession'}}>LogOut</a>
+      {{!-- </nav> --}}
       {{/if}}
     </div>
   </div>
@@ -45,10 +48,10 @@
       </p>
       <fieldset>
 
-        <legend>Project</legend>
+        <legend>Project & Due Date</legend>
         {{input type='text' placeholder='Project Name' value=model.taskName}}
         {{!-- {{input placeholder="Due date" type="date" value=model.dueDate }} --}}
-        {{date-picker dateValue=model.dueDate}}
+          {{date-picker dateValue=model.dueDate}}
 
       </fieldset>
       <button class="pure-button button-main save-project" type="submit" name="button">Save Project</button>

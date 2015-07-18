@@ -4,7 +4,7 @@
       MAMMOTH<span> task</span>
     </h1>
 
-    <h4 class="greeting">Hello {{model.name}}</h4>
+
 
     <div class="pure-menu pure-menu-horizontal">
       <ul class="pure-menu-list">
@@ -23,8 +23,10 @@
     </div>
 
     <div class="log-out-header">
+        <h5 class="greeting">Hello {{model.name}}</h5>
       {{#if session.isAuthenticated}}
-        <button class="pure-button log-out" name="button" {{action 'invalidateSession'}}>Log Out</button>
+      <a href='#' class='log-out-anchor'
+     {{action 'invalidateSession'}}>LogOut</a>
       {{/if}}
     </div>
   </div>

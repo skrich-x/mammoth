@@ -8,6 +8,7 @@ $font-family: 'Raleway', sans-serif;
 
 ////////// Colors/////////////
 $main-teal: RGBA(0, 150, 136, 1);
+$main-red:RGBA(110, 12, 14, 1);
 $main-gray: RGBA(223, 223, 223, 1);
 $light-tan: rgb(255, 255, 212);
 $dark-gray: rgb(181, 181, 191);
@@ -24,7 +25,7 @@ $base-background-color: $very-light-gray;
 @import 'session-create';
 @import 'task-create';
 @import 'link-styles';
-
+@import 'button-styles.scss';
 ///////Media Query////////
 $mobile: 720px;
 
@@ -35,6 +36,9 @@ $mobile: 720px;
 }
 a{
   text-decoration:none;
+}
+a:hover{
+  color:$main-red;
 }
 
 h1,h2,h3,h4,h5{
