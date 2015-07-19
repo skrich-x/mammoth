@@ -21,7 +21,7 @@
 .task-form input{
   @include span-columns(6);
 }
-// 
+//
 // .save-project {
 //   z-index: 5;
 //   position: absolute;
@@ -41,8 +41,8 @@
   @include span-columns(6);
   // @include shift(2);
   padding-left:1em;
-  position: absolute;
-  margin-top: -175px;
+  // position: absolute;
+  // padding-top: 175px;
 }
 
 .subtask-form input{
@@ -65,7 +65,7 @@
 #calendar{
   @include span-columns(5.5);  background-color:RGBA(52, 52, 52, .1);
   color: #97292c;
-  margin-top: 3em;
+  margin-top: -10em;
   border-radius: 10px;
   padding-left: 2em;
   padding-right: 2em;
