@@ -35,7 +35,6 @@
     $function: ease
   );
   padding-top: 7em;
-
 }
 
 .current-user-heading {
@@ -49,6 +48,7 @@
   font-size: 2em;
   padding-left: 2em;
 }
+
 .current-user-heading span{
   font-weight: 200;
 }
@@ -74,9 +74,7 @@
   @include shift(2);
   padding: 2em;
   color: #97292c;
-
 }
-
 
 .manage-description {
   @include span-columns(3);

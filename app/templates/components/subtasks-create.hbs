@@ -10,7 +10,7 @@
               {{subtask.subtaskName}}
               {{subtask.subtaskDueDate}}
               <form>
-              <button type="pure-button remove-button" {{action "removeSubtask" subtask}}><i class="fa fa-minus"></i></button>
+              <button type="pure-button remove-button" {{action "removeSubtask" subtask}}><i class="fa fa-minus-square-o fa-3x"></i></button>
             </form>
             </li>
           {{/each}}
@@ -22,7 +22,7 @@
                 <option>High</option>
               </select> --}}
 
-              <button class="pure-buttton button-main add-button" type="submit"><i class="fa fa-plus-circle"></i>
+              <button class="pure-buttton button-main add-button" type="submit"><i class="fa fa-plus-square-o fa-3x"></i>
               </button>
 
           </li>
@@ -36,7 +36,7 @@
     <button class="pure-button button-main" type="submit" name="button">Save</button> --}}
 
   </form>
-{{full-calendar events=events}}
+  {{full-calendar events=events}}
 
 </div>
 {{yield}}
