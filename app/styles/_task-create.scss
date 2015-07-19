@@ -21,17 +21,28 @@
 .task-form input{
   @include span-columns(6);
 }
-// .save-project{
-//   @include span-columns(2);
+// 
+// .save-project {
+//   z-index: 5;
+//   position: absolute;
+//   height: 150px;
+//   width: 150px;
+//   border-radius: 50%;
+//   background-color: RGBA(171, 199, 200, 1);
+//   margin-bottom: -200px;
 // }
+
+
 .task-instruction{
   color:#97292C;
 }
 
 .subtask-form{
-  @include span-columns(8);
+  @include span-columns(6);
   // @include shift(2);
   padding-left:1em;
+  position: absolute;
+  margin-top: -175px;
 }
 
 .subtask-form input{
@@ -39,15 +50,16 @@
 }
 
 .add-button{
-  height: 5em;
-  width: 5em;
+  height: 50px;
+  width: 50px;
   border-radius: 50%;
   text-align: center;
 
 }
 
 .add-button i{
-  font-size: 5em;
+  font-size: 45px;
+
 }
 
 #calendar{
