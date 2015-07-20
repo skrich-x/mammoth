@@ -24,6 +24,10 @@ Router.map(function() {
     this.route('create');
     this.route('createSubtask');
   });
+
+  this.route('mammoth', function() {
+    this.route('about');
+  });
 });
 
 export default Router;
