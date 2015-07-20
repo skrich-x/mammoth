@@ -27,6 +27,7 @@ Router.map(function() {
 
   this.route('mammoth', function() {
     this.route('about');
+    this.route('app-tutorial');
   });
 });
 
