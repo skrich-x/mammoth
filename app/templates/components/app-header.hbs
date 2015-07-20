@@ -1,1 +1,33 @@
+<div class=current-user-background>
+  <div class="users-current-nav">
+    <h1 class="current-user-heading">
+      MAMMOTH<span> task</span>
+    </h1>
 
+    <div class="pure-menu pure-menu-horizontal">
+      <ul class="pure-menu-list">
+        <li class="pure-menu-item pure-menu-selected"><a href="#" class="pure-menu-link">Manage</a></li>
+        <li class="pure-menu-item pure-menu-selected"><a href="#" class="pure-menu-link">How to Use Mammoth</a></li>
+        <li class="pure-menu-item pure-menu-selected"><a href="#" class="pure-menu-link">About</a></li>
+        <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+          <a href="#" id="menuLink1" class="pure-menu-link">Contact</a>
+          <ul class="pure-menu-children">
+            <li class="pure-menu-item"><a href="mailto:s.k.richardson7@gmail.com" class="pure-menu-link">Email</a></li>
+            <li class="pure-menu-item"><a href="https://twitter.com/skrich_x" class="pure-menu-link" target="Twitter">Twitter</a></li>
+            <li class="pure-menu-item"><a href="https://github.com/skrich-x" class="pure-menu-link" target="Github">Github</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div class="log-out-header">
+          <h5 class="greeting">Hello {{model.name}}</h5>
+      {{#if session.isAuthenticated}}
+      {{!-- <nav class="cl-effect-18"> --}}
+        <a href='#' class='log-out-anchor'
+       {{action 'invalidateSession'}}>LogOut</a>
+      {{!-- </nav> --}}
+      {{/if}}
+    </div>
+  </div>
+</div>
