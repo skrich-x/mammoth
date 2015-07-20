@@ -31,5 +31,15 @@ export default DS.Model.extend({
 
     return this.get('subtaskArray', 'dueDate');
 
-  }.observes('subtaskArray.[]', 'dueDate')
+  }.observes('subtaskArray.[]', 'dueDate'),
+
+  getEvents: function(){
+
+    return [
+      {
+        title:this.get("taskName"),
+        start:this.get('dueDate')
+    }
+    ];
+  }
 });
