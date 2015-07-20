@@ -1,13 +1,16 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+  model: function(){
+    return this.get ('session.currentUser');
+  },
 
   actions: {
     createTask: function() {
       this.sendAction('action', this.get('model'));
-      var events=[];
-      this.events.pushObject(newEvent);
-      this.$("#calendar").fullCalendar('renderEvent', newEvent, true);
+      // var events=[];
+      // this.events.pushObject(newEvent);
+      // this.$("#calendar").fullCalendar('renderEvent', newEvent, true);
 
     },
 

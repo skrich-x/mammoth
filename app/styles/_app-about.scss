@@ -1,0 +1,8 @@
+.about-container{
+  @include outer-container(1080px);
+  background-color: $medium-gray;
+}
+
+.about-title{
+  @include span-columns(10);
+}

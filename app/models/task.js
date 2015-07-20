@@ -33,13 +33,12 @@ export default DS.Model.extend({
 
   }.observes('subtaskArray.[]', 'dueDate'),
 
-  getEvents: function(){
-
+  calendarEvents: function(){
     return [
       {
-        title:this.get("taskName"),
-        start:this.get('dueDate')
-    }
+        title: this.get("taskName"),
+        start: this.get('dueDate')
+      }
     ];
-  }
+  }.property('taskName', 'dueDate', 'substasks.@each')
 });
