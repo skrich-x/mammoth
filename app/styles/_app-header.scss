@@ -59,6 +59,17 @@
 ////MOBILE STYLING////
 
 @media (max-width: 667px){
+  .users-current-nav {
+    background-color: #fff;
+    height: 80px;
+    z-index: 10;
+    /* The following styles are required for the "scroll-over" effect */
+    width: 100%;
+    position: fixed;
+    padding: 0em;
+    border-top: 6px solid RGBA(110, 12, 14, 1);
+    box-shadow: 0 3px 9px 0 rgba(0, 0, 0, 0.60);
+  }
 
   .current-user-heading {
     @include span-columns(3.5);
@@ -88,7 +99,31 @@
     display: none;
   }
 
-  .custom-restricted-width{
+ .pure-menu-vertical{
+   float:right;
+   display: block;
+   background-color: #fff;
   }
 
+  .bar-icon i{
+    float:right;
+    font-size:2em;
+    color: $main-red;
+  }
+
+  .bar-icon::ul{
+    display: none;
+  }
+
+  .pure-menu-item:first-child{
+    padding-top: 4.5em;
+  }
+
+  .pure-menu-item{
+    padding-top: 1em;
+  }
+
+  .bar-icon:hover, .bar-icon:focus{
+    display:block;
+  }
 }
