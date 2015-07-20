@@ -48,3 +48,47 @@
 //   padding: 1em;
 //   float: right;
 // }
+.pure-menu-vertical{
+  display:none;
+}
+
+////TABLET /////
+
+// @media (max-width:)
+
+////MOBILE STYLING////
+
+@media (max-width: 667px){
+
+  .current-user-heading {
+    @include span-columns(3.5);
+    @include omega();
+    margin: 0 auto;
+    // text-align: center;
+    vertical-align: baseline;
+    color: RGBA(0, 150, 136, 1);
+    font-weight: 900;
+    font-size: 2em;
+    padding-left: 0em;
+  }
+
+  .current-user-heading span{
+    font-weight: 200;
+  }
+
+  .pure-menu-horizontal {
+    @include span-columns(4);
+    display: none;
+  }
+
+  .log-out-header {
+    @include span-columns(3);
+    vertical-align: baseline;
+    float: right;
+    display: none;
+  }
+
+  .custom-restricted-width{
+  }
+
+}
