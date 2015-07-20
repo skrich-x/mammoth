@@ -23,6 +23,7 @@ Router.map(function() {
   this.route('tasks', function() {
     this.route('create');
     this.route('createSubtask');
+    this.route('manage');
   });
 
   this.route('mammoth', function() {

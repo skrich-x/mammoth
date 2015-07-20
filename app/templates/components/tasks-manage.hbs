@@ -1,0 +1,23 @@
+{{!-- {{app-header}} --}}
+{{log model}}
+<div class="manage-container">
+  <h1 class="manage-header">Manage the Mammoth</h1>
+  <ul class="manage-list">
+    <li>TASK</li>
+    <li>SUBTASK</li>
+      {{#each model.tasks as |task|}}
+      <li class="manage-tasks">
+        {{!-- {{tasks.taskname}}
+        {{tasks.dueDate}} --}}
+      </li>
+      {{/each}}
+      
+      {{#each subtask.subtaskName}}
+      <li class="manage-subtask">
+        {{!-- {{subtask.subtaskName}}
+        {{subtask.subtaskDuedate}} --}}
+      </li>
+      {{/each}}
+  </ul>
+</div>
+{{yield}}

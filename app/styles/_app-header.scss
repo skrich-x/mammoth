@@ -105,14 +105,10 @@
    background-color: #fff;
   }
 
-  .bar-icon i{
+  .bar-icon-nav i{
     float:right;
     font-size:2em;
     color: $main-red;
-  }
-
-  .bar-icon::ul{
-    display: none;
   }
 
   .pure-menu-item:first-child{
@@ -123,7 +119,11 @@
     padding-top: 1em;
   }
 
-  .bar-icon:hover, .bar-icon:focus{
+  .bar-icon-nav ul{
+    display: none;
+  }
+
+  .bar-icon-nav:hover, .bar-icon-nav:focus{
     display:block;
   }
 }
