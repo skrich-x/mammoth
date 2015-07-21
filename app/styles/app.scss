@@ -31,6 +31,7 @@ $base-background-color: $very-light-gray;
 @import 'button-styles.scss';
 ///////Media Query////////
 @import 'app-header-mobile';
+@import 'task-create-mobile';
 $mobile: 720px;
 
 //////Global Styling////////
