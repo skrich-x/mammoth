@@ -9,7 +9,7 @@ export default Ember.Route.extend({
   },
 
   actions: {
-    createTask: function(){
+    saveTask: function(){
       var model = this.modelFor(this.routeName);
       model.save();
     },

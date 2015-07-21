@@ -37,8 +37,15 @@ export default DS.Model.extend({
     return [
       {
         title: this.get("taskName"),
-        start: this.get('dueDate')
+        start: this.get('dueDate'),
+        allDay: true
       }
-    ];
+    ].concat(this.get('subtasks').map(function(s){
+      return {
+        title: s.subtaskName,
+        start: s.subtaskDueDate,
+        allDay: true
+      };
+    }));
   }.property('taskName', 'dueDate', 'substasks.@each')
 });

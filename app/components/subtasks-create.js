@@ -15,11 +15,14 @@ export default Ember.Component.extend({
         priority: 0,
         subtaskDueDate: ''
       });
+
+      this.sendAction('save');
     },
 
     removeSubtask: function(subtaskObject){
       var subtaskArray = this.get('model.subtaskArray');
       subtaskArray.removeObject(subtaskObject);
+      this.sendAction('save');
     },
   }
 });

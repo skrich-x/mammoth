@@ -1,27 +1,25 @@
 {{!-- {{app-header}} --}}
-{{log session.currentUser.name}}
-{{log session.currentUser}}
-{{log session.model.task}}
 <div class="manage-container">
   <h1 class="manage-header">Manage the Mammoth</h1>
   <ul class="manage-list">
-    <li class="manage-list-items">
-    {{session.currentUser.name}}
-    {{session.task}}
-      {{!-- {{#each session.currentUser.tasks as |task|}}
-      <li class="manage-tasks">
-        {{tasks.taskname}}
-        {{tasks.dueDate}}
+      {{#each model as |task|}}
+      <li class="manage-list-item">
+        <h2>{{task.taskname}}</h2>
+        <h3>{{task.dueDate}}</h3>
+
+        <ul class="subtasks-list">
+        {{#each task.subtasks as |subtask|}}
+          <li class="manage-subtask">
+            {{subtask.subtaskName}}
+            {{subtask.subtaskDueDate}}
+          </li>
+        {{/each}}
+        </ul>
+
       </li>
       {{/each}}
 
-      {{#each model.subtasks as |subtask|}}
-      <li class="manage-subtask">
-        {{subtask.subtaskName}}
-        {{subtask.subtaskDuedate}}
-      </li>
-      {{/each}} --}}
-      </li>
+
   </ul>
 </div>
 {{yield}}

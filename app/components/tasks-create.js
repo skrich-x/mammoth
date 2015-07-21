@@ -1,18 +1,16 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  model: function(){
-    return this.get ('session.currentUser');
-  },
+
 
   actions: {
-    createTask: function() {
+    saveTask: function() {
       this.sendAction('action', this.get('model'));
     },
 
     invalidateSession: function() {
       this.get('session').invalidate();
-    },
+    }
 
   //
   //   addEvent: function() {

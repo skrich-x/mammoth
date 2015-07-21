@@ -6,8 +6,5 @@ export default Ember.Component.extend({
       this.sendAction('action', this.get('model'));
     },
 
-    model: function(){
-      return this.get ('session.currentUser');
-    },
   }
 });
