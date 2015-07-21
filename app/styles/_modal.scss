@@ -12,7 +12,7 @@
   ///////////////HIDE MODAL FOR STYLING LATER
   display: none;
   //////////////
-    @include fadeIn();
+  @include fadeIn();
   background: rgba(30, 30, 30, 0.5);
   position: fixed;
   top: 0;
