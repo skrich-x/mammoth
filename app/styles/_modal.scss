@@ -1,16 +1,10 @@
-// .about-container{
-//   @include outer-container(500px);
-//   background-color: $medium-gray;
-// }
-//
-// .about-title{
-//   @include span-columns(10);
-// }
+.about-container{
+  background-color: $medium-gray;
+}
 
 .modal-fog {
-
   ///////////////HIDE MODAL FOR STYLING LATER
-  display: none;
+  // display: none;
   //////////////
   @include fadeIn();
   background: rgba(30, 30, 30, 0.5);
@@ -21,26 +15,32 @@
   right: 0;
   z-index: 1000;
 }
+
 .modal-frame {
   position: absolute;
   top: 10%;
-  left: 20%;
-  border: 1px solid #333;
-  background: #ddd;
-  height: 200px;
-  width: 200px;
+  border: 1px solid $main-red;
+  @include outer-container(650px);
 }
+
 .modal-title {
   background-color: $medium-gray;
+  color: $main-red;
   position: absolute;
   top: 0;
   text-align: center;
-
 }
+
+.project-examples{
+  font-weight: 400;
+  color:$main-teal;
+  text-align: center;
+}
+
 .modal-body {
 
   background-color: $medium-gray;
-  margin-top: 40px;
-  padding: 5px;
+  padding: 10em 2em 2em 2em;
   overflow: scroll;
+
 }
