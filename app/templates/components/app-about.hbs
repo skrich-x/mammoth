@@ -1,20 +1,38 @@
-{{app-header model=model}}
+{{!-- {{app-header model=model}} --}}
+{{#if enabled}}
+<div {{action 'toggleModal'}} class="modal-fog">
+    <div class="about-container">
+      <div class="modal-title">
+          <h1 class="about-title">How do you eat an Elephant?</h1>
 
-<div class="about-container">
-    <h1 class="about-title">How do you eat an Elephant?</h1>
-
-    <h1>...One bite at a time.</h1>
-
-    <p>
-    Mammoth Task is a simple concept supported by a proven strategy. <br>
-    Breaking down  larger tasks, events, and projects into smaller more obtainable goals helps to build momentum and eventual success.<br>
-    <br>
-    Birthday party to plan?<br>
-    Wedding to prepare for?<br>
-    Work project?<br>
-    <br>
-    Managing this process can be a challenge all on its own. Mammoth will have you to define the BIG project and guide you to include the small things (subtasks) that need to happen to check the big one off the list...   The subtasks are then evenly spread out and placed in your calendar.
-    Take small bites. Check off each smaller task. Before you know it, you’ve eaten the Elephant.
-    </p>
-</div>
-{{yield}}
+          <h1>...One bite at a time.</h1>
+        <div class="modal-body">
+          <p>
+          Mammoth Task is a simple concept supported by a proven strategy. <br>
+          Breaking down  larger tasks, events, and projects into smaller more obtainable goals helps to build momentum and eventual success.<br>
+          <br>
+          Birthday party to plan?<br>
+          Wedding to prepare for?<br>
+          Work project?<br>
+          <br>
+          Managing this process can be a challenge all on its own. Mammoth will have you to define the BIG project and guide you to include the small things (subtasks) that need to happen to check the big one off the list...   The subtasks are then evenly spread out and placed in your calendar.
+          Take small bites. Check off each smaller task. Before you know it, you’ve eaten the Elephant.
+          </p>
+        {{yield}}
+        </div>
+      </div>
+    </div>
+  </div>
+{{/if}}
+{{!-- {{#if enabled}}
+  <div {{action 'toggleModal'}} class="modal-fog">
+    <div class="modal-frame">
+      <div class="modal-title">
+        {{title}}
+      </div>
+      <div class="modal-body">
+        {{yield}}
+      </div>
+    </div>
+  </div>
+{{/if}} --}}
