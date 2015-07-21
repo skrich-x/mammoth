@@ -2,6 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   model: function(){
-    return this.get ('session.currentUser');
+    // return this.get ('session.currentUser');
+    return this.get ('model');
   },
 });
