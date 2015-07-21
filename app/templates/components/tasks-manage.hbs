@@ -5,7 +5,9 @@
   <ul class="manage-list">
     <li>TASK</li>
     <li>SUBTASK</li>
-      {{#each model.tasks as |task|}}
+    {{session.currentUser.name}}
+    {{session.currentUser.task}}
+      {{!-- {{#each session.currentUser.tasks as |task|}}
       <li class="manage-tasks">
         {{tasks.taskname}}
         {{tasks.dueDate}}
@@ -17,7 +19,7 @@
         {{subtask.subtaskName}}
         {{subtask.subtaskDuedate}}
       </li>
-      {{/each}}
+      {{/each}} --}}
   </ul>
 </div>
 {{yield}}

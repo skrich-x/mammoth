@@ -2,12 +2,16 @@
 //   @include outer-container(500px);
 //   background-color: $medium-gray;
 // }
-
+//
 // .about-title{
 //   @include span-columns(10);
 // }
 
 .modal-fog {
+
+  ///////////////HIDE MODAL FOR STYLING LATER
+  display: none;
+  //////////////
     @include fadeIn();
   background: rgba(30, 30, 30, 0.5);
   position: fixed;

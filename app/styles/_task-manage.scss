@@ -1,0 +1,7 @@
+.manage-container{
+  @include outer-container(1080px);
+}
+
+.manage-header{
+  padding: 100px;
+}
