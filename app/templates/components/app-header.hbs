@@ -41,7 +41,7 @@
     </div>
 
     <div class="log-out-header">
-          <h5 class="greeting">Hello {{model.name}}</h5>
+          <h5 class="greeting">Hello {{session.currentUser.name}}</h5>
       {{#if session.isAuthenticated}}
       {{!-- <nav class="cl-effect-18"> --}}
         <a href='#' class='log-out-anchor'

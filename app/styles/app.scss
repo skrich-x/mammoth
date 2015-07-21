@@ -30,6 +30,7 @@ $base-background-color: $very-light-gray;
 @import 'link-styles';
 @import 'button-styles.scss';
 ///////Media Query////////
+@import 'app-header-mobile';
 $mobile: 720px;
 
 //////Global Styling////////

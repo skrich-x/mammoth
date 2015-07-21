@@ -8,9 +8,6 @@ export default Ember.Component.extend({
   actions: {
     createTask: function() {
       this.sendAction('action', this.get('model'));
-      // var events=[];
-      // this.events.pushObject(newEvent);
-      // this.$("#calendar").fullCalendar('renderEvent', newEvent, true);
 
     },
 

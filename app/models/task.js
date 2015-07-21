@@ -4,7 +4,7 @@ import Ember from 'ember';
 export default DS.Model.extend({
   taskName: DS.attr('string'),
   dueDate: DS.attr('date'),
-  // owner: DS.belongsTo('parseUser'),
+  owner: DS.belongsTo('parseUser'),
 
   defaults: function() {
     if (!this.get('subtaskArray')) {

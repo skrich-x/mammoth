@@ -14,7 +14,7 @@
   @include span-columns(6);
   @include omega();
   // @include shift(2);
-  margin-top: 3em;
+  margin-top: 10em;
   padding:1em;
 }
 
@@ -34,7 +34,6 @@
 
 .task-instruction{
   color:#97292C;
-  
 }
 
 .subtask-form{
@@ -42,7 +41,6 @@
   // @include shift(2);
   padding-left:1em;
   padding-bottom:10em;
-
 }
 
 .subtask-form input{
@@ -69,4 +67,49 @@
 
 .fc-toolbar{
   color:RGBA(0, 150, 136, 1);
+}
+
+////MOBILE STYLING/////
+
+@media (max-width: 667px){
+
+#calendar{
+  @include span-columns(11.5);
+  background-color:RGBA(52, 52, 52, .1);
+  color: #97292c;
+  margin-top: 1em;
+  border-radius: 10px;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.task-form{
+  @include span-columns(11.5);
+  @include omega();
+  // @include shift(2);
+  margin-top: 3em;
+  padding:1em;
+}
+
+.task-form input{
+  @include span-columns(11.5);
+}
+
+.subtask-form{
+  @include span-columns(11.5);
+  // @include shift(2);
+  padding-left:1em;
+  padding-bottom:1em;
+}
+
+.subtask-form input{
+  @include span-columns(11.5);
+}
+
+.task-instruction{
+  margin-top: 4em;
+  text-align: center;
+  color:#97292C;
+}
+
 }

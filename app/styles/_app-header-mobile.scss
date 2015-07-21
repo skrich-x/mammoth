@@ -1,0 +1,71 @@
+////HEADER MOBILE STYLING////
+
+@media (max-width: 667px){
+  .users-current-nav {
+    background-color: #fff;
+    height: 80px;
+    z-index: 10;
+    /* The following styles are required for the "scroll-over" effect */
+    width: 100%;
+    position: fixed;
+    padding: 0em;
+    border-top: 6px solid RGBA(110, 12, 14, 1);
+    box-shadow: 0 3px 9px 0 rgba(0, 0, 0, 0.60);
+  }
+
+  .current-user-heading {
+    @include span-columns(3.5);
+    @include omega();
+    margin: 0 auto;
+    // text-align: center;
+    vertical-align: baseline;
+    color: RGBA(0, 150, 136, 1);
+    font-weight: 900;
+    font-size: 2em;
+    padding-left: 0em;
+  }
+
+  .current-user-heading span{
+    font-weight: 200;
+  }
+
+  .pure-menu-horizontal {
+    @include span-columns(4);
+    display: none;
+  }
+
+  .log-out-header {
+    @include span-columns(3);
+    vertical-align: baseline;
+    float: right;
+    display: none;
+  }
+
+ .pure-menu-vertical{
+   float:right;
+   display: block;
+   background-color: #fff;
+  }
+
+  .bar-icon-nav i{
+    float:right;
+    font-size:2em;
+    color: $main-red;
+  }
+
+  .pure-menu-item:first-child{
+    padding-top: 4.5em;
+  }
+
+  .pure-menu-item{
+    padding-top: 1em;
+  }
+
+  .bar-icon-nav ul{
+    display: none;
+  }
+
+  .bar-icon-nav:hover, .bar-icon-nav:focus{
+    display:block;
+  }
+}
