@@ -1,7 +1,3 @@
-.about-container{
-  background-color: $medium-gray;
-}
-
 .modal-fog {
   ///////////////HIDE MODAL FOR STYLING LATER
   // display: none;
@@ -17,8 +13,7 @@
 }
 
 .modal-frame {
-  position: absolute;
-  top: 10%;
+  // position: absolute;
   border: 1px solid $main-red;
   @include outer-container(650px);
 }
@@ -27,7 +22,6 @@
   background-color: $medium-gray;
   color: $main-red;
   position: absolute;
-  top: 0;
   text-align: center;
 }
 
@@ -38,7 +32,6 @@
 }
 
 .modal-body {
-
   background-color: $medium-gray;
   padding: 10em 2em 2em 2em;
   overflow: scroll;

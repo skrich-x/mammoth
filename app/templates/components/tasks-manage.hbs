@@ -1,12 +1,13 @@
 {{!-- {{app-header}} --}}
+{{log session.currentUser.name}}
 {{log session.currentUser}}
-{{log session.model.taskName}}
+{{log session.model.task}}
 <div class="manage-container">
   <h1 class="manage-header">Manage the Mammoth</h1>
   <ul class="manage-list">
     <li class="manage-list-items">
     {{session.currentUser.name}}
-    {{session.currentUser.task}}
+    {{session.task}}
       {{!-- {{#each session.currentUser.tasks as |task|}}
       <li class="manage-tasks">
         {{tasks.taskname}}

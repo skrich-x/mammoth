@@ -1,6 +1,6 @@
 <div class='subtask-create-container'>
 
-  <form class="pure-form pure-form-stacked subtask-form" {{action "createSubtask" on="submit"}}>
+  <form class="pure-form pure-form-stacked subtask-form" {{action "createSubtask" "createTask" on="submit"}}>
 
     <fieldset>
       <legend>Enter Sub Tasks and Priority Here</legend>
@@ -24,14 +24,9 @@
 
               <button class="pure-buttton button-main add-button" type="submit"><i class="fa fa-plus-square-o fa-3x"></i>
               </button>
-
           </li>
-
         </ul>
-
     </fieldset>
-
-
 {{!--
     <button class="pure-button button-main" type="submit" name="button">Save</button> --}}
 
