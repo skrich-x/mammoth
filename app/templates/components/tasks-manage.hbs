@@ -7,15 +7,15 @@
     <li>SUBTASK</li>
       {{#each model.tasks as |task|}}
       <li class="manage-tasks">
-        {{!-- {{tasks.taskname}}
-        {{tasks.dueDate}} --}}
+        {{tasks.taskname}}
+        {{tasks.dueDate}}
       </li>
       {{/each}}
-      
-      {{#each subtask.subtaskName}}
+
+      {{#each model.subtasks as |subtask|}}
       <li class="manage-subtask">
-        {{!-- {{subtask.subtaskName}}
-        {{subtask.subtaskDuedate}} --}}
+        {{subtask.subtaskName}}
+        {{subtask.subtaskDuedate}}
       </li>
       {{/each}}
   </ul>

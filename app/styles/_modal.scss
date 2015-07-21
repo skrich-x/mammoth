@@ -8,6 +8,7 @@
 // }
 
 .modal-fog {
+    @include fadeIn();
   background: rgba(30, 30, 30, 0.5);
   position: fixed;
   top: 0;
@@ -29,11 +30,11 @@
   background-color: $medium-gray;
   position: absolute;
   top: 0;
-  width: 100%;
   text-align: center;
 
 }
 .modal-body {
+
   background-color: $medium-gray;
   margin-top: 40px;
   padding: 5px;
