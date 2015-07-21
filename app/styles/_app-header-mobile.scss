@@ -14,7 +14,7 @@
   }
 
   .current-user-heading {
-    @include span-columns(3.5);
+    @include span-columns(3);
     @include omega();
     margin: 0 auto;
     // text-align: center;
@@ -47,10 +47,14 @@
    background-color: #fff;
   }
 
-  .bar-icon-nav i{
+  .fa-bars{
     float:right;
     font-size:2em;
     color: $main-red;
+  }
+
+  .mobile-dropdown {
+  // display: none;
   }
 
   .pure-menu-item:first-child{
@@ -61,11 +65,9 @@
     padding-top: 1em;
   }
 
-  .bar-icon-nav ul{
-    display: none;
-  }
+.menu-icon:focus + .mobile-dropdown,
+.mobile-dropdown:focus{
+  display: inline-block;
+ }
 
-  .bar-icon-nav:hover, .bar-icon-nav:focus{
-    display:block;
-  }
 }
