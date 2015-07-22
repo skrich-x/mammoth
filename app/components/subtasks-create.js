@@ -20,7 +20,7 @@ export default Ember.Component.extend({
     },
 
     removeSubtask: function(subtaskObject){
-      var subtaskArray = this.get('model.subtaskArray');
+      var subtaskArray = this.get('model.subtasks');
       subtaskArray.removeObject(subtaskObject);
       this.sendAction('save');
     },

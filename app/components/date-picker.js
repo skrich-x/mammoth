@@ -29,3 +29,5 @@ export default Ember.Component.extend({
   }.observes('dateString').on('init'),
 
  });
+
+ //moment().format('MMMM Do YYYY, h:mm:ss a'); // July 21st 2015, 7:52:46 pm

@@ -15,9 +15,17 @@
 .manage-list-item h2{
   color:$main-red;
   font-weight: 600;
-
 }
 
 .manage-subtask{
   color:$main-teal;
+}
+
+.manage-subtask-label{
+  text-decoration:underline;
+  margin-bottom:.5em;
+}
+
+.delete-task{
+  right:0px;
 }
