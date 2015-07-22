@@ -11,28 +11,5 @@ export default Ember.Component.extend({
     invalidateSession: function() {
       this.get('session').invalidate();
     }
-
-  //
-  //   addEvent: function() {
-  //   var newEvent = [];
-  //   this.events.pushObject(newEvent);
-  //   this.$("#calendar").fullCalendar('renderEvent', newEvent, true);
-  // }
-
   }
 });
-//
-// $('#calendar').fullCalendar({
-//     events: function(start, end, timezone, callback) {
-//                 var events = [];
-//                 $(doc).find('event').each(function() {
-//                     events.push({
-//                         title: $(this).attr('title'),
-//                         start: $(this).attr('start') // will be parsed
-//                     });
-//                 });
-//                 callback(events);
-//
-//         });
-//     }
-// });

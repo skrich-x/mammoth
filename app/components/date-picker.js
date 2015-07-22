@@ -26,5 +26,6 @@ export default Ember.Component.extend({
       dateArray[2]
     );
     this.set('dateValue', date);
-  }.observes('dateString').on('init')
+  }.observes('dateString').on('init'),
+
  });

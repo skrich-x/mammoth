@@ -4,5 +4,20 @@
 }
 
 .manage-header{
-  padding: 100px;
+  padding-top: 110px;
+  text-align: center;
+}
+
+.manage-list{
+  padding: 3em;
+}
+
+.manage-list-item h2{
+  color:$main-red;
+  font-weight: 600;
+
+}
+
+.manage-subtask{
+  color:$main-teal;
 }
