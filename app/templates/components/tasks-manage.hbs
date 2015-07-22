@@ -23,6 +23,8 @@
           </li>
         {{/each}}
         </ul>
+
+        <button type="pure-button" class="markAsComplete" {{action "completedTask" on="submit"}}>Mark Project as Complete</button>
         <button type="pure-button" class="delete-task" name="destroyTask" {{action "destroyTask" on="submit"}}> Delete Task</button>
       </li>
       {{/each}}

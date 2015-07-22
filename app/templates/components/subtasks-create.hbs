@@ -32,6 +32,9 @@
 
   </form>
   {{full-calendar events=events}}
+  {{#link-to 'tasks.manage'}}
   <button class="pure-button button-main">Manage Tasks</button>
+  {{/link-to}}
+
 </div>
 {{yield}}
