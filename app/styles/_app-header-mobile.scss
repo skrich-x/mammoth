@@ -41,7 +41,7 @@
     display: none;
   }
 
- .pure-menu-vertical{
+ .mobile-heading{
    float:right;
    display: block;
    background-color: #fff;
@@ -54,7 +54,8 @@
   }
 
   .mobile-dropdown {
-  // display: none;
+    display: none;
+    // position: absolute;
   }
 
   .pure-menu-item:first-child{
@@ -65,8 +66,8 @@
     padding-top: 1em;
   }
 
-.menu-icon:focus + .mobile-dropdown,
-.mobile-dropdown:focus{
+.menu-icon:hover + .mobile-dropdown,
+.mobile-dropdown:hover{
   display: inline-block;
  }
 
