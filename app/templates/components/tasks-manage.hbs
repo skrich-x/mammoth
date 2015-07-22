@@ -1,6 +1,10 @@
 {{!-- {{app-header}} --}}
 <div class="manage-container">
   <h1 class="manage-header">Manage with Mammoth</h1>
+
+    {{#link-to 'tasks.create'}}
+    <button class="button-main pure-button  manage-create-new" name="button">Create NEW<br> Project</button>
+    {{/link-to}}
   <ul class="manage-list">
       {{#each model as |task|}}
       <li class="manage-list-item">
@@ -19,10 +23,9 @@
           </li>
         {{/each}}
         </ul>
-        <button type="pure-button" class="delete-task" name="destroyTask" {{action "destroyTask"}}> Delete Task</button>
+        <button type="pure-button" class="delete-task" name="destroyTask" {{action "destroyTask" on="submit"}}> Delete Task</button>
       </li>
       {{/each}}
-
 
   </ul>
 </div>
