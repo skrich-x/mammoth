@@ -13,13 +13,13 @@
         <h6 class="manage-subtask-label">Subtasks</h6>
         {{#each task.subtasks as |subtask|}}
           <li class="manage-subtask">
+            <input id="remember" type="checkbox">
             {{subtask.subtaskName}}
             {{subtask.subtaskDueDate}}
-                          <button type="pure-button manage-remove-button" {{action "removeSubtask" subtask}}><i class="fa fa-minus-square-o fa-3x"></i></button>
           </li>
         {{/each}}
         </ul>
-                <button type="pure-button" class="delete-task" name="destroyTask" {{action "deleteTask"}}> Delete Task</button>
+        <button type="pure-button" class="delete-task" name="destroyTask" {{action "destroyTask"}}> Delete Task</button>
       </li>
       {{/each}}
 
