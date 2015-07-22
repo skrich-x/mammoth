@@ -8,7 +8,7 @@ export default Ember.Route.extend({
   actions: {
 
     destroyTask: function(task) {
-      this.get('manage.task').destroyRecord(task);
+      this.get('model').destroyRecord(task);
     }
   }
 });
