@@ -1,27 +1,26 @@
-{{!-- {{app-header}} --}}
+{{!-- {{app-header}}--}}
 <div class="manage-container">
   <h1 class="manage-header">Manage with Mammoth</h1>
 
-    {{#link-to 'tasks.create'}}
-    <button class="button-main pure-button  manage-create-new" name="button">Create NEW<br> Project</button>
-    {{/link-to}}
+  {{#link-to 'tasks.create'}}
+    <button class="button-main pure-button  manage-create-new" name="button">Create NEW
+      <br> Project</button>
+  {{/link-to}}
   <ul class="manage-list">
-      {{#each model as |task|}}
+    {{#each model as |task|}}
       <li class="manage-list-item">
-          <hr>
+        <hr>
         <h2>{{task.taskName}}</h2>
 
         <h3>Project Due Date: {{task.dueDate}}</h3>
 
         <ul class="subtasks-list">
-        <h6 class="manage-subtask-label">Subtasks</h6>
-        {{#each task.subtasks as |subtask|}}
-          <li class="manage-subtask">
-            <input id="remember" type="checkbox">
-            {{subtask.subtaskName}}
-            {{subtask.subtaskDueDate}}
-          </li>
-        {{/each}}
+          <h6 class="manage-subtask-label">Subtasks</h6>
+          {{#each task.subtasks as |subtask|}}
+            <li class="manage-subtask">
+              <input id="remember" type="checkbox"> {{subtask.subtaskName}} {{subtask.subtaskDueDate}}
+            </li>
+          {{/each}}
 
         </ul>
 
@@ -29,12 +28,13 @@
           <i class="fa fa-check fa-5x"></i>
         </div>
 
-        <button type="pure-button" class="markAsComplete"{{action "markComplete"}}>Mark Project as Complete</button>
+        <button type="pure-button" class="markAsComplete" {{action "markComplete"}}>Mark Project as Complete</button>
         <button type="pure-button" class="delete-task" name="destroyTask" {{action "destroyTask" on="submit"}}> Delete Task</button>
       </li>
-      {{/each}}
+    {{/each}}
 
   </ul>
 
 </div>
+
 {{yield}}

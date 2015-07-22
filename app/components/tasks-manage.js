@@ -1,3 +1,5 @@
+/* globals $ */
+
 import Ember from 'ember';
 
 export default Ember.Component.extend({
@@ -7,10 +9,10 @@ export default Ember.Component.extend({
       this.sendAction('action', task);
     },
 
-    markComplete: function(){
-      $( "#button" ).click(function() {
-        $( "fa" ).toggle();
-    });
+    markComplete: function() {
+      $(".completedTask").click(function() {
+        $(".markAsComplete").toggle();
+      });
     }
   }
 });
