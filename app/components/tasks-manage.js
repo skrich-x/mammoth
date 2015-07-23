@@ -9,15 +9,5 @@ export default Ember.Component.extend({
       this.sendAction('destroyTask', task);
     },
 
-    markComplete: function(task){
-      console.log('1');
-      this.sendAction('markComplete', task);
-      console.log('mark');
-      // if(this.$('.taskComplete').hasClass("complete")){
-      //     $(this).removeClass("complete");
-      //   }else{
-      //     $(this).addClass("complete");
-      // }
-      }
     }
 });

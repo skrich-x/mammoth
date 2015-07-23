@@ -60,7 +60,7 @@ input[type="checkbox"]:checked + span{
   background-color: RGBA(250,250,250, 1);
 }
 
-.complete{
+.isComplete{
   transition: 2s;
   z-index: 2;
   opacity: .4;

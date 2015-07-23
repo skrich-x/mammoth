@@ -5,6 +5,7 @@ export default DS.Model.extend({
   taskName: DS.attr('string'),
   dueDate: DS.attr('date'),
   owner: DS.belongsTo('parseUser'),
+  isComplete: DS.attr('boolean'),
 
   defaults: function() {
     if (!this.get('subtaskArray')) {

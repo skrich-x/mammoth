@@ -2,6 +2,10 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
 
+  classNameBindings:['isComplete'],
+
+  isComplete: Ember.computed.alias('task.isComplete'),
+
   subtaskChecked: function(){
     this.get('task').save();
   }.observes('task.subtasks.@each.isComplete'),
@@ -12,9 +16,8 @@ export default Ember.Component.extend({
 
   },
   markComplete: function(task){
-    this.sendAction('markComplete', task);
-    console.log('mark');
-
+    task.toggleProperty('isComplete');
+    task.save();
   }
 }
 });
