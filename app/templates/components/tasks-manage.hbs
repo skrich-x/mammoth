@@ -11,7 +11,8 @@
       <li class="manage-list-item">
         <hr>
         {{#link-to 'tasks.edit' task}}
-        <a class="edit"><h2>{{task.taskName}}</h2></a>
+          <h2 class='manage-edit'>{{task.taskName}}</h2>
+          <span>(click to edit)</span>
         {{/link-to}}
 
         <h3>Project Due Date: {{task.dueDate}}</h3>
