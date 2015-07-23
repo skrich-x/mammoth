@@ -51,11 +51,6 @@ input[type="checkbox"]:checked + span{
   text-decoration: line-through;
 }
 
-.manage-list-item i{
-  font-size: 5em;
-  display:none;
-}
-
-.is-Complete{
-  display: block;
+.is-complete .manage-edit{
+  text-decoration: line-through;
 }
