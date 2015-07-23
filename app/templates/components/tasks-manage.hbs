@@ -11,11 +11,14 @@
       <li class="manage-list-item">
         <hr>
         {{#link-to 'tasks.edit' task}}
-          <h2 class='manage-edit'>{{input type="checkbox" action="markComplete" class="projectCheckbox" name="isComplete" checked=false}}{{task.taskName}}</h2>
+          <h2 class='manage-edit'>{{task.taskName}}</h2>
           <span>(click to edit)</span>
         {{/link-to}}
 
         <h3>Project Due Date: {{format-date task.dueDate}}</h3>
+        <div class="projectComplete">
+          <i class= 'fa fa-check'></i>
+        </div>
 
         <ul class="subtasks-list">
           <h6 class="manage-subtask-label">Subtasks</h6>
@@ -27,7 +30,10 @@
 
         </ul>
 
+        <button type="pure-button" class="taskComplete" name="markComplete" {{action "markComplete" task}}>Mark Complete</button>
+
         <button type="pure-button" class="delete-project" name="destroyTask" {{action "destroyTask" task}}> Delete Project</button>
+
       </li>
     {{/each}}
 
