@@ -5,8 +5,8 @@ import Ember from 'ember';
 export default Ember.Component.extend({
 
   actions: {
-    saveTask: function() {
-      this.sendAction('action', this.get('model'));
+    saveTask: function(task) {
+      this.sendAction('action', task);
     },
 
     destroyTask: function(task) {
