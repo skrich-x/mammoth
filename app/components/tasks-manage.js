@@ -14,10 +14,9 @@ export default Ember.Component.extend({
     },
 
 
-    markComplete: function() {
-      $(".completedTask").click(function() {
-        $(".markAsComplete").toggle();
-      });
-    }
+    // markComplete: function() {
+    //
+    //
+    // }
   }
 });

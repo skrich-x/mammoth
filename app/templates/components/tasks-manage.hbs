@@ -21,18 +21,14 @@
           <h6 class="manage-subtask-label">Subtasks</h6>
           {{#each task.subtasks as |subtask|}}
             <li class="manage-subtask">
-              <input id="remember" type="checkbox"> {{subtask.subtaskName}} {{format-date subtask.subtaskDueDate}}
+              {{input type="checkbox" name="isComplete" checked=false}} {{subtask.subtaskName}} {{format-date subtask.subtaskDueDate}}
             </li>
           {{/each}}
 
         </ul>
 
-        <div class="completedTask">
-          <i class="fa fa-check fa-5x"></i>
-        </div>
-
         <button type="pure-button" class="markAsComplete" {{action "markComplete"}}>Mark Project as Complete</button>
-        <button type="pure-button" class="delete-task" name="destroyTask" {{action "destroyTask" task}}> Delete Task</button>
+        <button type="pure-button" class="delete-project" name="destroyTask" {{action "destroyTask" task}}> Delete Project</button>
       </li>
     {{/each}}
 
