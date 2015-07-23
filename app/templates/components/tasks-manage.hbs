@@ -10,7 +10,9 @@
     {{#each model as |task|}}
       <li class="manage-list-item">
         <hr>
-        <h2>{{task.taskName}}</h2>
+        {{#link-to 'tasks.edit' task}}
+        <a class="edit"><h2>{{task.taskName}}</h2></a>
+        {{/link-to}}
 
         <h3>Project Due Date: {{task.dueDate}}</h3>
 
