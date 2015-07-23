@@ -24,7 +24,7 @@
           <h6 class="manage-subtask-label">Subtasks</h6>
           {{#each task.subtasks as |subtask|}}
             <li class="manage-subtask">
-              {{input type="checkbox" action="markComplete" class="checkbox" name="isComplete" checked=false}} <span>{{subtask.subtaskName}} {{format-date subtask.subtaskDueDate}}</span>
+              {{input type="checkbox" class="checkbox" name="isComplete" checked=subtask.isComplete}} <span>{{subtask.subtaskName}} {{format-date subtask.subtaskDueDate}}</span>
             </li>
           {{/each}}
 

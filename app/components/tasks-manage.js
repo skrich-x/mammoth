@@ -6,7 +6,7 @@ export default Ember.Component.extend({
 
   actions: {
     destroyTask: function(task) {
-      this.sendAction('action', task);
+      this.sendAction('destroyTask', task);
     },
 
     markComplete: function(task){
@@ -16,7 +16,7 @@ export default Ember.Component.extend({
       //     $(this).removeClass("complete");
       //   }else{
       //     $(this).addClass("complete");
-        // }
+      // }
       }
     }
 });

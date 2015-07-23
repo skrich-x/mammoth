@@ -11,9 +11,8 @@ export default Ember.Route.extend({
       task.destroyRecord();
     },
 
-    markComplete: function(task){
-      this.sendAction('markComplete', task);
-      console.log('mark');
-  }
+    markComplete: function(){
+      
+    }
 }
 });
