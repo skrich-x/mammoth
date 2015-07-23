@@ -18,7 +18,7 @@
           <h6 class="manage-subtask-label">Subtasks</h6>
           {{#each task.subtasks as |subtask|}}
             <li class="manage-subtask">
-              <input id="remember" type="checkbox"> {{subtask.subtaskName}} {{subtask.subtaskDueDate}}
+              <input id="remember" type="checkbox"> {{subtask.subtaskName}} {{format-date subtask.subtaskDueDate}}
             </li>
           {{/each}}
 
@@ -29,7 +29,7 @@
         </div>
 
         <button type="pure-button" class="markAsComplete" {{action "markComplete"}}>Mark Project as Complete</button>
-        <button type="pure-button" class="delete-task" name="destroyTask" {{action "destroyTask" on="submit"}}> Delete Task</button>
+        <button type="pure-button" class="delete-task" name="destroyTask" {{action "destroyTask" task}}> Delete Task</button>
       </li>
     {{/each}}
 

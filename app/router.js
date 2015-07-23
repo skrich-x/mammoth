@@ -24,6 +24,7 @@ Router.map(function() {
     this.route('create');
     this.route('createSubtask');
     this.route('manage');
+    this.route('edit', {path: ':task_id/edit'});
   });
 
   this.route('mammoth', function() {
