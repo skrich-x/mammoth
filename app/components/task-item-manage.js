@@ -8,9 +8,13 @@ export default Ember.Component.extend({
 
   actions:{
   destroyTask: function(task) {
-    console.log("1");
     this.sendAction('destroyTask', task);
-    console.log("2");
+
+  },
+  markComplete: function(task){
+    this.sendAction('markComplete', task);
+    console.log('mark');
+
   }
 }
 });
