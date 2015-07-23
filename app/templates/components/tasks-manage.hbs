@@ -8,7 +8,7 @@
   {{/link-to}}
   <ul class="manage-list">
     {{#each model as |task|}}
-      {{task-item-manage task=task}}
+      {{task-item-manage task=task destroyTask='destroyTask' markComplete='markComplete'}}
     {{/each}}
 
   </ul>

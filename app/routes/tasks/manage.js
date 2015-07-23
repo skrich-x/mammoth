@@ -8,11 +8,12 @@ export default Ember.Route.extend({
   actions: {
 
     destroyTask: function(task) {
+      console.log("route");
       task.destroyRecord();
     },
 
     markComplete: function(){
-      
+
     }
 }
 });
