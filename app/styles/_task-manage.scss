@@ -51,18 +51,11 @@ input[type="checkbox"]:checked + span{
   text-decoration: line-through;
 }
 
-.projectComplete{
-  font-size: 10em;
-  position: absolute;
-  z-index: -100;
+.manage-list-item i{
+  font-size: 5em;
   display:none;
-  top:55%;
-  left:45%;
-  background-color: RGBA(250,250,250, 1);
 }
 
-// .is-Complete{
-//   transition: 2s;
-//   z-index:2;
-//   opacity: .4;
-// }
+.is-Complete{
+  display: block;
+}
