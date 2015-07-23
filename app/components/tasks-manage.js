@@ -13,10 +13,16 @@ export default Ember.Component.extend({
       this.sendAction('action', task);
     },
 
+    markComplete: function(){
+      $("manage-subtask li").change(function(){
+        if($(this).is(":checked")){
+          console.log('checked');
+          $(this).addClass("line-through");
+        }else{
+          $(this).removeClass("line-through");
+        }
+      });
 
-    // markComplete: function() {
-    //
-    //
-    // }
+    }
   }
 });

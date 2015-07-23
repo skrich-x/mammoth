@@ -31,6 +31,7 @@
 
 .manage-subtask{
   color:$main-teal;
+  font-size:1.2em;
 }
 
 .manage-subtask-label{
@@ -42,7 +43,10 @@
   right:0px;
 }
 
-.completedTask{
-  color:$main-red;
-  float:right;
+.line-through{
+  text-decoration: line-through;
+}
+
+input[type="checkbox"]:checked + span{
+  text-decoration: line-through;
 }
