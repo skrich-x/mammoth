@@ -36,6 +36,16 @@
         <li class="menu-icon"><i class="fa fa-bars"></i></li>
           <ul class="pure-menu-list mobile-dropdown">
 
+            <li class="log-out-header-mobile pure-menu-item">
+                  <h6 class="mobile-greeting">Hello {{session.currentUser.name}}</h6>
+              {{#if session.isAuthenticated}}
+              {{!-- <nav class="cl-effect-18"> --}}
+                <a href='#' class='log-out-anchor'
+               {{action 'invalidateSession'}}><h6>LogOut</h6></a>
+              {{!-- </nav> --}}
+              {{/if}}
+            </li>
+
             {{#link-to 'tasks.manage'}}
             <li class="pure-menu-item pure-menu-selected"><a class="pure-menu-link">Manage</a></li>
             {{/link-to}}

@@ -34,6 +34,7 @@ $base-background-color: $very-light-gray;
 ///////Media Query////////
 @import 'app-header-mobile';
 @import 'task-create-mobile';
+@import 'task-manage-mobile';
 $mobile: 720px;
 
 //////Global Styling////////
