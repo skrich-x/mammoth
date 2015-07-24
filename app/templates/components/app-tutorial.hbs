@@ -16,12 +16,23 @@
     <br>As you add subtask they will automatically show up in the to the subtask list and in the calendar</p>
 
     <img src="assets/createTaskSS.png" class="createSS" alt="Create Task Page" />
-   </div>
+  </div>
+    {{#link-to tasks.create}}
+      <button type="pure-button" class="create-screenshot-button  button-main" name="button">
+        Create New Task Now!
+      </button>
+    {{/link-to}}
 
     <div class="manage-page-screenshot-instruction">
     <p>Go to the manage page to see updated project lists, due dates and subtasks. You can check the subtasks as complete, mark the Project as complete or even edit and Add the whole project by clicking on it's name</p>
     <img src="assets/managSS.png" class="manageSS" alt="Manage Screen Shot" />
   </div>
+    {{#link-to tasks.create}}
+      <button type="pure-button" class="manage-screenshot-button button-main" name="button">
+        Manage Your Tasks!
+      </button>
+    {{/link-to}}
+
 </div>
 </div>
 

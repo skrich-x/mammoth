@@ -36,17 +36,32 @@
 .currentSS{
   @include span-columns(8);
   @include shift(2);
+  box-shadow: 0 3px 9px 0 rgba(0, 0, 0, 0.60);
 
 }
 
 .createSS{
   @include span-columns(8);
   @include shift(2);
+  box-shadow: 0 3px 9px 0 rgba(0, 0, 0, 0.60);
 }
 
 .manageSS{
   @include span-columns(8);
   @include shift(2);
+  box-shadow: 0 3px 9px 0 rgba(0, 0, 0, 0.60);
+}
+
+.create-screenshot-button{
+  @include span-columns(3);
+  @include shift(4.5);
+  margin-top:2em;
+}
+
+.manage-screenshot-button{
+  @include span-columns(3);
+  @include shift(4.5);
+  margin-top:2em;
 }
 
 
