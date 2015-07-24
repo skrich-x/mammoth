@@ -4,10 +4,10 @@
   padding: 10em 2em 2em 2em;
 }
 
-.centered-container{
-  @include span-columns(8);
-  @include shift(2);
-}
+// .centered-container{
+//   @include span-columns(8);
+//   @include shift(2);
+// }
 
 .tutorial-header{
   color:$main-red;
@@ -34,16 +34,72 @@
 }
 
 .currentSS{
-  width: 450px;
-  height: auto;
+  @include span-columns(8);
+  @include shift(2);
+
 }
 
 .createSS{
-  width:450px;
-  height: auto;
+  @include span-columns(8);
+  @include shift(2);
 }
 
 .manageSS{
-  width: 450px;
-  height: auto;
+  @include span-columns(8);
+  @include shift(2);
+}
+
+
+@media (min-width : 320px) and (max-width: 667px){
+
+  .app-tutorial-container{
+    @include outer-container(1080px);
+    background-color: $medium-gray;
+    padding: 7em 2em 2em 2em;
+  }
+
+  // .centered-container{
+  //   @include span-columns(8);
+  //   @include shift(2);
+  // }
+
+  .tutorial-header{
+    color:$main-red;
+    text-align: center;
+  }
+
+  .current-screenshot-instruction{
+    @include span-columns(10);
+    @include shift(1);
+    text-align: center;
+    font-size: 1.25em;
+  }
+  .create-screenshot-instruction{
+    @include span-columns(10);
+    @include shift(1);
+    text-align: center;
+    font-size: 1.25em;
+  }
+  .manage-page-screenshot-instruction{
+    @include span-columns(10);
+    @include shift(1);
+    text-align: center;
+    font-size: 1.25em;
+  }
+
+  .currentSS{
+    @include span-columns(12);
+    @include shift(0);
+
+  }
+
+  .createSS{
+    @include span-columns(12);
+    @include shift(0);
+  }
+
+  .manageSS{
+    @include span-columns(12);
+    @include shift(0);
+  }
 }
