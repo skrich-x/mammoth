@@ -34,23 +34,22 @@
 }
 
 .currentSS{
-  @include span-columns(8);
-  @include shift(2);
+  @include span-columns(12);
   box-shadow: 0 3px 9px 0 rgba(0, 0, 0, 0.60);
 
 }
-
-.createSS{
-  @include span-columns(8);
-  @include shift(2);
-  box-shadow: 0 3px 9px 0 rgba(0, 0, 0, 0.60);
-}
-
-.manageSS{
-  @include span-columns(8);
-  @include shift(2);
-  box-shadow: 0 3px 9px 0 rgba(0, 0, 0, 0.60);
-}
+//
+// .createSS{
+//   @include span-columns(8);
+//   @include shift(2);
+//   box-shadow: 0 3px 9px 0 rgba(0, 0, 0, 0.60);
+// }
+//
+// .manageSS{
+//   @include span-columns(8);
+//   @include shift(2);
+//   box-shadow: 0 3px 9px 0 rgba(0, 0, 0, 0.60);
+// }
 
 .create-screenshot-button{
   @include span-columns(3);
@@ -70,7 +69,7 @@
   .app-tutorial-container{
     @include outer-container(1080px);
     background-color: $medium-gray;
-    padding: 7em 2em 2em 2em;
+    padding: 5em 2em 2em 2em;
   }
 
   // .centered-container{
@@ -104,17 +103,18 @@
 
   .currentSS{
     @include span-columns(12);
-    @include shift(0);
 
   }
-
-  .createSS{
-    @include span-columns(12);
-    @include shift(0);
+  .create-screenshot-button{
+    @include span-columns(8);
+    @include shift(2);
+    margin-top:0em;
   }
 
-  .manageSS{
-    @include span-columns(12);
-    @include shift(0);
+  .manage-screenshot-button{
+    @include span-columns(8);
+    @include shift(2);
+    margin-top:0em;
   }
+
 }
