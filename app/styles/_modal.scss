@@ -35,5 +35,10 @@
   background-color: $medium-gray;
   padding: 2em 2em 2em 2em;
   overflow: scroll;
+}
 
+.lets-go{
+  @include pulse();
+  text-decoration: none;
+  text-align: center;
 }
