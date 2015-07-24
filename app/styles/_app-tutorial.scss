@@ -1,0 +1,16 @@
+.app-tutorial-container{
+  @include outer-container(1080px);
+  background-color: $medium-gray;
+  padding-top: 10em;
+
+
+}
+
+.tutorial-header{
+  color:$main-red;
+}
+
+img{
+  @include span-columns(6);
+  display:inline-block;
+}
