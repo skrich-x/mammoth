@@ -1,4 +1,4 @@
-@media (max-width: 667px){
+@media (min-width : 320px) and (max-width: 667px){
 
   .manage-list-item h2{
     text-align: center;
@@ -22,4 +22,29 @@
     margin-top: 2em;
     margin-left:auto;
   }
+  .subtask-list{
+    text-align: center;
+  }
+
+  .mobile-button{
+    margin:0 auto;
+  }
+
 }
+
+
+// @media (min-width : 320px) and (max-width : 650px)
+//
+// @media (min-width : 650px)
+// and (max-width : 1000px) {
+//
+// @media (min-width : 320px ) and (max-width : 750px)
+//
+// @media (min-width : 751px) and (max-width : 1000px)
+//
+// @media (min-width : 480px)
+// @media (min-width : 480px)
+// and (max-width : 700px)
+// @media (min-width : 480px)
+// and (max-width : 700px)
+// and (max-width : 1000px)

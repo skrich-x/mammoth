@@ -1,20 +1,4 @@
 /////////Users-Current Session///////////
-
-// .circle-logo {
-//   z-index: 10;
-//   position: relative;
-//   height: 150px;
-//   width: 150px;
-//   background-color: RGBA(171, 199, 200, 1);
-//   border-radius: 50%;
-//   border: 3px solid RGBA(110, 12, 14, 1);
-// }
-//
-// .circle-logo img {
-//   height: 75px;
-//   width: auto;
-// }
-
 .create-manage-logo {
   @include span-columns(6);
   @include shift(3);
@@ -38,6 +22,7 @@
   @include shift(2);
   padding: 2em;
   color: #97292c;
+  border-top: 1px solid $dark-gray
 }
 
 .manage-description {
@@ -45,12 +30,5 @@
   @include shift(2);
   padding: 2em;
   color: #97292c;
-}
-
-.create-description {
-  border-top: 1px solid $dark-gray;
-}
-
-.manage-description {
   border-top: 1px solid $dark-gray;
 }
