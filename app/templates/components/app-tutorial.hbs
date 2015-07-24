@@ -1,19 +1,30 @@
 {{app-header model=model}}
 <div class="app-tutorial-container">
+  <div class="centered-container">
 
   <h1 class="tutorial-header">How to Use Mammoth Task</h1>
-    <p>To master Mammoth Task.. First simply choose to Create a custom project or Manage your progress.
+  <div class='current-screenshot-instruction'>
+    <p>To master Mammoth Task.. First simply choose to Create a custom project or Manage your progress.<br> We suggest, if you are new to Mammoth task, to Create a new Project first.
     </p>
-    <img src="assets/createFirst.png" alt="Landing Page" />
-    <p> We suggest if you are new to Mammoth taks to Create a new Project first.</p>
-    <p> Input the Project Name and Choose a Due Date.</p>
-    <p>As you add subtask they will automatically show up in the to the subtask list and in the calendar</p>
 
+    <img src="assets/createFirst.png" class="currentSS" alt="Landing Page" />
+   </div>
+
+
+    <div class ='create-screenshot-instruction'>
+    <p> Input the Project Name and Choose a Due Date.
+    <br>As you add subtask they will automatically show up in the to the subtask list and in the calendar</p>
+
+    <img src="assets/createTaskSS.png" class="createSS" alt="Create Task Page" />
+   </div>
+
+    <div class="manage-page-screenshot-instruction">
     <p>Go to the manage page to see updated project lists, due dates and subtasks. You can check the subtasks as complete, mark the Project as complete or even edit and Add the whole project by clicking on it's name</p>
+    <img src="assets/managSS.png" class="manageSS" alt="Manage Screen Shot" />
 
     <p>When you are all done.. Delete the Project or leave it to see how much you've done!</p>
-
-
+  </div>
+</div>
 </div>
 
 {{yield}}
