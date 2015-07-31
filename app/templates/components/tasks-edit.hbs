@@ -1,0 +1,27 @@
+{{app-header}}
+
+<div class="task-create-container">
+  <div class="task-create">
+    <form class="pure-form pure-form-stacked task-form" {{action "saveTask" on="submit"}}>
+      <p class="task-instruction">
+        Create a large Project with a Due date. <br>
+        Add and remove subtask to that Project...<br>
+        MAMMOTH will break down the Project into small managable bites.
+      </p>
+      <fieldset>
+
+        <legend>Project & Due Date</legend>
+        {{input type='text' placeholder='Project Name' value=model.taskName focus-out="saveTask"}}
+        {{!-- {{input placeholder="Due date" type="date" value=model.dueDate }} --}}
+        {{date-picker dateValue=model.dueDate focus-out="saveTask"}}
+
+      </fieldset>
+
+    </form>
+
+  </div>
+
+</div>
+
+{{subtasks-create model=model save='saveTask'}}
+{{full-calendar model=model}}

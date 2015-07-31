@@ -1,0 +1,44 @@
+.modal-fog {
+  ///////////////HIDE MODAL FOR STYLING LATER
+  // display: none;
+  //////////////
+  @include fadeIn();
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.modal-frame {
+  // position: absolute;
+  @include outer-container(650px);
+  border: 1px solid $main-red;
+  background-color: $medium-gray;
+  box-shadow:0 20px 30px 0 rgba(0, 0, 0, 0.5);
+
+}
+
+.modal-title {
+  margin-top: 6em;
+  background-color: $medium-gray;
+  color: $main-red;
+  text-align: center;
+}
+
+.project-examples{
+  font-weight: 400;
+  color:$main-teal;
+  text-align: center;
+}
+
+.modal-body {
+  background-color: $medium-gray;
+  padding: 2em 2em 2em 2em;
+  overflow: scroll;
+}
+
+.lets-go{
+  @include pulse();
+  text-decoration: none;
+  text-align: center;
+}

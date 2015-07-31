@@ -3,7 +3,7 @@
 module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'mammoth',
-    environment: environment,
+    environment: 'environment',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
@@ -16,6 +16,26 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
+      applicationId: 'IyPtqWAaNuoEHXxJTdXBJntno7vKMzkOyqiJIDaQ',
+      restApiId: 'zdODLArmeXuCcOrUrxGiO5Yv4VgJli4T77COxztA'
+    },
+
+    contentSecurityPolicy: {
+      'default-src': "'none'",
+      'script-src': "'self'",
+      'font-src': "'self' fonts.gstatic.com",
+      'connect-src': "'self' api.parse.com ",
+      'style-src': "'self' 'fonts.googleapis.com'",
+      'img-src': "'self'",
+      'media-src': "'self'"
+    },
+
+    'simple-auth': {
+      authenticationRoute: 'sessions.create',
+      routeAfterAuthentication: 'users.current',
+      routeIfAlreadyAuthenticated: 'users.current',
+      authorizer: 'authorizer:parse',
+      crossOriginWhitelist: ['https://api.parse.com']
     }
   };
 
@@ -40,6 +60,8 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
+    ENV.locationType = 'hash';
+    ENV.baseURL = '/mammoth/';
 
   }
 

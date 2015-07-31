@@ -6,6 +6,31 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('landing', {path: '/'});
+
+  this.route('sessions', function() {
+    this.route('create');
+    this.route('destroy');
+  });
+
+  // this.route('users.current', {path: 'me'});
+  this.route('users', function() {
+    this.route('create');
+    this.route('show', {path :':parse-user_id'});
+    this.route('current');
+  });
+
+  this.route('tasks', function() {
+    this.route('create');
+    this.route('createSubtask');
+    this.route('manage');
+    this.route('edit', {path: ':task_id/edit'});
+  });
+
+  this.route('mammoth', function() {
+    this.route('about');
+    this.route('app-tutorial');
+  });
 });
 
 export default Router;

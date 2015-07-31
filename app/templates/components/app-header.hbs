@@ -1,0 +1,84 @@
+<div class=current-user-background>
+  <div class="users-current-nav">
+    {{#link-to 'users.current'}}
+    <h1 class="current-user-heading">
+      MAMMOTH<span> task</span>
+    </h1>
+    {{/link-to}}
+    <div class="pure-menu pure-menu-horizontal">
+      <ul class="pure-menu-list">
+        {{#link-to 'tasks.manage'}}
+        <li class="pure-menu-item pure-menu-selected"><a class="pure-menu-link">Manage</a></li>
+        {{/link-to}}
+
+        {{#link-to 'mammoth.app-tutorial'}}
+        <li class="pure-menu-item pure-menu-selected"><a class="pure-menu-link">How to Use Mammoth</a></li>
+        {{/link-to}}
+
+        {{#link-to 'mammoth.about'}}
+        <li class="pure-menu-item pure-menu-selected">
+          <a class="pure-menu-link">About</a></li>
+        {{/link-to}}
+
+        <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+          <a href="mailto:s.k.richardson7@gmail.com" id="menuLink1" class="pure-menu-link">Contact</a>
+          <ul class="pure-menu-children">
+            <li class="pure-menu-item"><a href="mailto:s.k.richardson7@gmail.com" class="pure-menu-link">Email</a></li>
+            <li class="pure-menu-item"><a href="https://twitter.com/skrich_x" class="pure-menu-link" target="Twitter">Twitter</a></li>
+            <li class="pure-menu-item"><a href="https://github.com/skrich-x" class="pure-menu-link" target="Github">Github</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    {{! Mobile Header }}
+    <div class="pure-menu pure-menu-vertical mobile-heading">
+      <ul class="bar-icon-nav">
+        <li class="menu-icon"><i class="fa fa-bars"></i></li>
+          <ul class="pure-menu-list mobile-dropdown">
+
+            {{#link-to 'tasks.manage'}}
+            <li class="pure-menu-item pure-menu-selected"><a class="pure-menu-link">Manage</a></li>
+            {{/link-to}}
+
+            {{#link-to 'mammoth.app-tutorial'}}
+            <li class="pure-menu-item pure-menu-selected"><a href="mammoth/app-tutorial" class="pure-menu-link">How to Use Mammoth</a></li>
+            {{/link-to}}
+
+
+
+              {{#link-to 'mammoth.about'}}
+              <li class="pure-menu-item pure-menu-selected">
+                <a class="pure-menu-link"
+                >About</a></li>
+              {{/link-to}}
+              <hr>
+
+                <li class="pure-menu-item"><a href="mailto:s.k.richardson7@gmail.com" class="pure-menu-link">Email</a></li>
+                <li class="pure-menu-item"><a href="https://twitter.com/skrich_x" class="pure-menu-link" target="Twitter">Twitter</a></li>
+                <li class="pure-menu-item"><a href="https://github.com/skrich-x" class="pure-menu-link" target="Github">Github</a></li>
+
+                <hr>
+                <li class="log-out-header-mobile pure-menu-item">
+                      <h6 class="mobile-greeting">Hello {{session.currentUser.name}}</h6>
+                  {{#if session.isAuthenticated}}
+                  {{!-- <nav class="cl-effect-18"> --}}
+                    <a href='#' class='log-out-anchor'
+                   {{action 'invalidateSession'}}><h6 class='mobile-logout'>LogOut</h6></a>
+                  {{!-- </nav> --}}
+                  {{/if}}
+                </li>
+        </ul>
+      </ul>
+    </div>
+
+    <div class="log-out-header">
+          <h5 class="greeting">Hello {{session.currentUser.name}}</h5>
+      {{#if session.isAuthenticated}}
+      {{!-- <nav class="cl-effect-18"> --}}
+        <a href='#' class='log-out-anchor'
+       {{action 'invalidateSession'}}><h6 class="logoutAnchor">LogOut</h6></a>
+      {{!-- </nav> --}}
+      {{/if}}
+    </div>
+  </div>
+</div>

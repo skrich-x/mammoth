@@ -1,0 +1,24 @@
+<li class="manage-list-item">
+  <hr>
+  {{#link-to 'tasks.edit' task}}
+    <h2 class='manage-edit'>{{task.taskName}}</h2>
+    <p>(click to edit)</p>
+  {{/link-to}}
+
+  <h3>Project Due Date: {{format-date task.dueDate}}</h3>
+
+  <ul class="subtasks-list">
+    <h6 class="manage-subtask-label">Subtasks</h6>
+    {{#each task.subtasks as |subtask|}}
+      <li class="manage-subtask">
+        {{input type="checkbox" class="checkbox" name="isComplete" checked=subtask.isComplete}} <span>{{subtask.subtaskName}} {{format-date subtask.subtaskDueDate}}</span>
+      </li>
+    {{/each}}
+
+  </ul>
+
+  <button type="pure-button" class="taskComplete"  name="markComplete" {{action "markComplete" task}}>Mark Complete</button>
+
+  <button type="pure-button" class="delete-project"   name="destroyTask" {{action "destroyTask" task}}> Delete Project</button>
+
+</li>

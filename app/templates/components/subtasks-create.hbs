@@ -1,0 +1,32 @@
+<div class='subtask-create-container'>
+
+  <form class="pure-form pure-form-stacked subtask-form" {{action "createSubtask" on="submit"}}>
+
+    <fieldset>
+      <legend>Enter Sub Tasks and Priority Here</legend>
+        <ul class="subtask-list sortable">
+          {{#each model.subtasks as |subtask|}}
+            <li>
+              {{subtask.subtaskName}}
+              {{format-date subtask.subtaskDueDate}}
+              <form>
+              <button type="pure-button remove-button" {{action "removeSubtask" subtask}}><i class="fa fa-minus-square-o fa-3x"></i></button>
+            </form>
+            </li>
+          {{/each}}
+          <li class="subtask-list-items">
+              {{input type="text" placeholder="Subtask" value=subtaskName}}
+              <button class="pure-buttton button-main add-button" type="submit"><i class="fa fa-plus-square-o fa-3x"></i>
+              </button>
+          </li>
+        </ul>
+    </fieldset>
+
+  </form>
+  {{full-calendar events=events}}
+  {{#link-to 'tasks.manage'}}
+  <button class="pure-button button-main">Manage Tasks</button>
+  {{/link-to}}
+
+</div>
+{{yield}}

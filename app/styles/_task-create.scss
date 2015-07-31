@@ -1,0 +1,71 @@
+///////////Task Create//////////////
+
+.task-create-container{
+  @include outer-container(1080px);
+  background-color:$medium-gray;
+}
+
+.subtask-create-container{
+  @include outer-container(1080px);
+  background-color:$medium-gray;
+}
+
+.task-form{
+  @include span-columns(6);
+  @include omega();
+  // @include shift(2);
+  margin-top: 10em;
+  padding:1em;
+}
+
+.task-form input{
+  @include span-columns(6);
+}
+// .save-project {
+//   z-index: 5;
+//   position: absolute;
+//   height: 150px;
+//   width: 150px;
+//   border-radius: 50%;
+//   background-color: RGBA(171, 199, 200, 1);
+//   margin-bottom: -200px;
+// }
+
+
+.task-instruction{
+  color:#97292C;
+}
+
+.subtask-form{
+  @include span-columns(6);
+  // @include shift(2);
+  padding-left:1em;
+  padding-bottom:10em;
+}
+
+.subtask-form input{
+  @include span-columns(6);
+}
+
+.add-button{
+  margin-top: 0.35em;
+}
+
+.remove-button{
+  background-color: $main-red;
+  padding-top:2px;
+}
+
+#calendar{
+  @include span-columns(5.5);
+  background-color:RGBA(52, 52, 52, .1);
+  color: #97292c;
+  margin-top: -15em;
+  border-radius: 10px;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.fc-toolbar{
+  color:RGBA(0, 150, 136, 1);
+}

@@ -1,0 +1,120 @@
+.app-tutorial-container{
+  @include outer-container(1080px);
+  background-color: $medium-gray;
+  padding: 10em 2em 2em 2em;
+}
+
+// .centered-container{
+//   @include span-columns(8);
+//   @include shift(2);
+// }
+
+.tutorial-header{
+  color:$main-red;
+  text-align: center;
+}
+
+.current-screenshot-instruction{
+  @include span-columns(8);
+  @include shift(2);
+  text-align: center;
+  font-size: 1.25em;
+}
+.create-screenshot-instruction{
+  @include span-columns(8);
+  @include shift(2);
+  text-align: center;
+  font-size: 1.25em;
+}
+.manage-page-screenshot-instruction{
+  @include span-columns(8);
+  @include shift(2);
+  text-align: center;
+  font-size: 1.25em;
+}
+
+.currentSS{
+  @include span-columns(12);
+  box-shadow: 0 3px 9px 0 rgba(0, 0, 0, 0.60);
+
+}
+//
+// .createSS{
+//   @include span-columns(8);
+//   @include shift(2);
+//   box-shadow: 0 3px 9px 0 rgba(0, 0, 0, 0.60);
+// }
+//
+// .manageSS{
+//   @include span-columns(8);
+//   @include shift(2);
+//   box-shadow: 0 3px 9px 0 rgba(0, 0, 0, 0.60);
+// }
+
+.create-screenshot-button{
+  @include span-columns(3);
+  @include shift(4.5);
+  margin-top:2em;
+}
+
+.manage-screenshot-button{
+  @include span-columns(3);
+  @include shift(4.5);
+  margin-top:2em;
+}
+
+
+@media (min-width : 320px) and (max-width: 667px){
+
+  .app-tutorial-container{
+    @include outer-container(1080px);
+    background-color: $medium-gray;
+    padding: 5em 2em 2em 2em;
+  }
+
+  // .centered-container{
+  //   @include span-columns(8);
+  //   @include shift(2);
+  // }
+
+  .tutorial-header{
+    color:$main-red;
+    text-align: center;
+  }
+
+  .current-screenshot-instruction{
+    @include span-columns(10);
+    @include shift(1);
+    text-align: center;
+    font-size: 1.25em;
+  }
+  .create-screenshot-instruction{
+    @include span-columns(10);
+    @include shift(1);
+    text-align: center;
+    font-size: 1.25em;
+  }
+  .manage-page-screenshot-instruction{
+    @include span-columns(10);
+    @include shift(1);
+    text-align: center;
+    font-size: 1.25em;
+  }
+
+  .currentSS{
+    @include span-columns(12);
+
+  }
+  .create-screenshot-button{
+    @include span-columns(8);
+    @include shift(2);
+    margin-top:0em;
+  }
+
+  .manage-screenshot-button{
+    @include span-columns(8);
+    @include shift(2);
+    margin-top:0em;
+  }
+
+}

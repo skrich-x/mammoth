@@ -1,0 +1,18 @@
+{{!-- {{app-header}}--}}
+<div class="manage-container">
+  <h1 class="manage-header">Manage with Mammoth</h1>
+
+  {{#link-to 'tasks.create'}}
+    <button class="button-main pure-button  manage-create-new" name="button">Create NEW
+      <br> Project</button>
+  {{/link-to}}
+  <ul class="manage-list">
+    {{#each model as |task|}}
+      {{task-item-manage task=task destroyTask='destroyTask' markComplete='markComplete'}}
+    {{/each}}
+
+  </ul>
+
+</div>
+
+{{yield}}

@@ -1,0 +1,21 @@
+{{app-header model=model}}
+<div class="users-current-container">
+  <img src="assets/mammothLogoV4.png" class="create-manage-logo" alt="mammoth logo" />
+
+  <div class="create-manage-description">
+    <div class="create-description">
+      <h5>Create a custom Project.</h5>
+      {{#link-to 'tasks.create'}}
+        <button class="pure-button button-main" type="submit" name="button">Create</button>
+      {{/link-to}}
+    </div>
+
+    <div class="manage-description">
+      <h5>Manage your Progress Here</h5>
+      {{#link-to 'tasks.manage'}}
+      <button class="pure-button button-main" type="submit" name="button">Manage </button>
+      {{/link-to}}
+
+    </div>
+  </div>
+</div>

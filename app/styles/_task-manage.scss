@@ -1,0 +1,56 @@
+.manage-container{
+  @include outer-container(1080px);
+  background-color: $medium-gray;
+}
+
+.manage-header{
+  padding-top: 110px;
+  text-align: center;
+}
+
+.manage-create-new{
+  text-align: center;
+  float: right;
+  z-index: 500;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  margin-right: -30px;
+  margin-top: - 50px;
+}
+
+.manage-list{
+  padding: 3em;
+}
+
+.manage-list-item h2{
+  color:$main-red;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.manage-subtask{
+  color:$main-teal;
+  font-size:1.2em;
+}
+
+.manage-subtask-label{
+  text-decoration:underline;
+  margin-bottom:.5em;
+}
+
+.delete-task{
+  right:0px;
+}
+
+.line-through{
+  text-decoration: line-through;
+}
+
+input[type="checkbox"]:checked + span{
+  text-decoration: line-through;
+}
+
+.is-complete .manage-edit{
+  text-decoration: line-through;
+}
