@@ -8,6 +8,10 @@
     <hr>
     <h3 class="landing-tagline">Manage BIG problems in small bites.</h3>
 
+    {{#link-to 'mammoth.app-tutorial'}}
+      <button class="button-main pure-button  manage-create-new" name="button">Explore<br>Mammoth<br>Task</button>
+    {{/link-to}}
+
     <div class="landing-option-buttons">
     {{#if session.isAuthenticated}}
       {{#link-to 'users.current'}}
