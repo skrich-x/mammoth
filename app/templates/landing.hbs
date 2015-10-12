@@ -1,6 +1,10 @@
 <div class="landing-container">
   <div class='landing-modal'>
+
     <img src="assets/mammothLogoV4.png" class="landing-logo" alt="mammoth logo" />
+    {{#link-to 'mammoth.app-tutorial'}}
+      <button class="button-main pure-button  explore-mammoth" name="button">Explore<br>Mammoth<br>Task</button>
+    {{/link-to}}
     <h1 class="landing-heading">
       MAMMOTH<span> task</span>
     </h1>
@@ -8,9 +12,6 @@
     <hr>
     <h3 class="landing-tagline">Manage BIG problems in small bites.</h3>
 
-    {{#link-to 'mammoth.app-tutorial'}}
-      <button class="button-main pure-button  manage-create-new" name="button">Explore<br>Mammoth<br>Task</button>
-    {{/link-to}}
 
     <div class="landing-option-buttons">
     {{#if session.isAuthenticated}}
