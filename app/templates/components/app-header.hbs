@@ -1,10 +1,23 @@
 <div class=current-user-background>
   <div class="users-current-nav">
-    {{#link-to 'users.current'}}
-    <h1 class="current-user-heading">
-      MAMMOTH<span> task</span>
-    </h1>
-    {{/link-to}}
+    {{#if session.isAuthenticated}}
+
+      {{#link-to 'users.current'}}
+      <h1 class="current-user-heading">
+        MAMMOTH<span> task</span>
+      </h1>
+      {{/link-to}}
+
+    {{else}}
+
+      {{#link-to 'users.create'}}
+      <h1 class="current-user-heading">
+        MAMMOTH<span> task</span>
+      </h1>
+      {{/link-to}}
+
+    {{/if}}
+
     <div class="pure-menu pure-menu-horizontal">
       <ul class="pure-menu-list">
         {{#link-to 'tasks.manage'}}
@@ -30,6 +43,7 @@
         </li>
       </ul>
     </div>
+
     {{! Mobile Header }}
     <div class="pure-menu pure-menu-vertical mobile-heading">
       <ul class="bar-icon-nav">
