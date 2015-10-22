@@ -20,9 +20,15 @@
 
     <div class="pure-menu pure-menu-horizontal">
       <ul class="pure-menu-list">
-        {{#link-to 'tasks.manage'}}
-        <li class="pure-menu-item pure-menu-selected"><a class="pure-menu-link">Manage</a></li>
-        {{/link-to}}
+        {{#if session.isAuthenticated}}
+          {{#link-to 'tasks.manage'}}
+          <li class="pure-menu-item pure-menu-selected"><a class="pure-menu-link">Manage</a></li>
+          {{/link-to}}
+
+        {{else}}
+          <li class="pure-menu-item pure-menu-disabled"><a class="pure-menu-link">Manage</a></li>
+        {{/if}}
+
 
         {{#link-to 'mammoth.app-tutorial'}}
         <li class="pure-menu-item pure-menu-selected"><a class="pure-menu-link">How to Use Mammoth</a></li>
