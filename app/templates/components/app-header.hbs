@@ -92,13 +92,18 @@
     </div>
 
     <div class="log-out-header">
-          <h5 class="greeting">Hello {{session.currentUser.name}}</h5>
       {{#if session.isAuthenticated}}
+        <h5 class="greeting">Hello {{session.currentUser.name}}</h5>
       {{!-- <nav class="cl-effect-18"> --}}
         <a href='#' class='log-out-anchor'
-       {{action 'invalidateSession'}}><h6 class="logoutAnchor">LogOut</h6></a>
+        {{action 'invalidateSession'}}><h6 class="logoutAnchor">LogOut</h6></a>
       {{!-- </nav> --}}
+      {{else}}
+      <h5 class="greeting">Hello Guest</h5>
+    {{!-- <nav class="cl-effect-18"> --}}
+    
       {{/if}}
+
     </div>
   </div>
 </div>
